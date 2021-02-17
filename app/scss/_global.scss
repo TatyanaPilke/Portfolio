@@ -1,0 +1,77 @@
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  // font-weight: 400;
+  // font-size: 16px;
+  // color: grey;
+  background-color: #fff;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.5 ease-in-out;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.page {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.f-jcsb {
+  justify-content: space-between;
+}
+
+.f-aic {
+  align-items: center;
+}
+
+.hidden {
+  font-size: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
