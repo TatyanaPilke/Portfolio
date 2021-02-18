@@ -18,9 +18,10 @@ body {
 body {
   font-family: 'Quicksand', sans-serif;
   font-style: normal;
-  // font-weight: 400;
-  // font-size: 16px;
-  // color: grey;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.04em;
+  color: $title;
   background-color: #fff;
   min-width: 320px;
   overflow-x: hidden;
@@ -74,4 +75,26 @@ ul {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $title;
+
+}
+
+.btn {
+  font-size: 15px;
+  font-weight: 700;
+  color: $white;
+  text-transform: uppercase;
+  padding: 19px 30px;
+  border: transparent;
+  outline: transparent;
+  background: linear-gradient(90deg, #AB07C6 0%, #4340D1 106.31%);
+  border-radius: 30px;
 }
