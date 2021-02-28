@@ -1,0 +1,63 @@
+.decor-line {
+  width: 120px;
+  height: 10px;
+  opacity: 0.5;
+  background-color: $line;
+  display: block;
+  position: absolute;
+  z-index: 6;
+
+
+  &--line1 {
+    top: 210px;
+    width: 80px;
+  }
+
+  &--line2 {
+    top: 510px;
+    width: 20px;
+    height: 60px;
+    background-color: #DA8EE7;
+  }
+
+  &--line3 {
+    bottom: 0;
+    width: 60px;
+    background-color: $white;
+    opacity: 1;
+    left: 400px;
+  }
+
+  &--line4 {
+    bottom: 0;
+    width: 300px;
+    right: 400px;
+  }
+
+  &--line5 {
+    bottom: -10px;
+    width: 100px;
+    right: 700px;
+  }
+
+  &--line6 {
+    bottom: 210px;
+    width: 80px;
+    height: 20px;
+    right: 400px;
+  }
+
+  &--line7 {
+    top: 330px;
+    width: 80px;
+    right: 200px;
+    background-color: #C468D3;
+  }
+
+  &--line8 {
+    bottom: -10px;
+    width: 120px;
+    left: 200px;
+    background-color: #C468D3;
+  }
+}

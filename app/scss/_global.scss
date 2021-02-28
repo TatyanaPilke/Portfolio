@@ -12,6 +12,7 @@ html {
 
 html,
 body {
+  position: relative;
   height: 100%;
 }
 
@@ -25,6 +26,9 @@ body {
   background-color: #fff;
   min-width: 320px;
   overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 a {
