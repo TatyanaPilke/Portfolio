@@ -49,12 +49,6 @@
     margin-top: 20px;
   }
 
-  &__img {
-    z-index: 3;
-    max-width: 180px;
-    max-height: 62px;
-  }
-
   &__title {
     letter-spacing: 0.09em;
     font-size: 48px;
@@ -235,8 +229,8 @@
     display: block;
     width: 15px;
     height: 15px;
-    border-bottom: 5px solid $line;
-    border-right: 5px solid $line;
+    border-bottom: 5px solid $white;
+    border-right: 5px solid $white;
     transform: rotate(45deg);
     margin: -16px;
     animation: arrow-down 2s infinite;
