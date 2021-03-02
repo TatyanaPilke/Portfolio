@@ -29,7 +29,6 @@
     margin: 0 auto;
     width: 300px;
     height: 60px;
-    position: relative;
 
     &:before,
     &:after {
@@ -71,10 +70,16 @@
   }
 
   &__text {
-    max-width: 1100px;
+    max-width: 1015px;
     color: $text;
     line-height: 32px;
     font-size: 20px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 19;
+    -webkit-box-orient: vertical;
   }
   
   &__line {

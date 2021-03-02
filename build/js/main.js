@@ -1,6 +1,6 @@
-  //  start SWIPER
+  //  start SWIPER skills
 
-  var swiper = new Swiper('.swiper-container', {
+  var swiper = new Swiper('.skills__container', {
     spaceBetween: 30,
     slidesPerView: 9,
     loop: true,
@@ -17,6 +17,18 @@
   });
   
 //  end SWIPER  
+
+ //  start SWIPER reviews
+
+ var swiper = new Swiper('.reviews__container', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: '.reviews__pagination',
+    clickable: true,
+  },
+});
+//  end SWIPER reviews
 
 // start ACCORDION(FAQ) 
 

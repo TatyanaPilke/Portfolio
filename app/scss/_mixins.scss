@@ -3,3 +3,11 @@
     @content; 
   } 
 }
+
+@mixin text-hidden {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    // -webkit-line-clamp: 19;
+    -webkit-box-orient: vertical;
+}
