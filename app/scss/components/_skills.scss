@@ -40,7 +40,7 @@
       content: " ";
       position: absolute;
       display: block;
-      top: 40px;
+      top: 50px;
       z-index: -1;
       background: rgba(38, 34, 34, 0.8);
       width: 100%;
@@ -59,11 +59,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
-
-    &:hover:after {
-      opacity: 0;
-    }
+    z-index: 3;
 
     &:after {
       content: "";
@@ -86,26 +82,39 @@
     }
   }
 
-  &__triangle-icon {
+  &__icon {
     display: block;
     position: absolute;
     background-repeat: no-repeat;
-    top: 130px;
+    top: 150px;
     left: -50px;
     background-size: 142px 106px;
     background-size: cover;
     width: 100px;
-    height: 106px;
+    height: 102px;
     z-index: 3;
+
 
     &--turn {
       transform: rotate(180deg);
       z-index: 3;
     }
 
-    &--adobe {
-      width: 100px;
+    &--width {
       height: 100px;
+    }
+
+    &--html {
+      height: 107px;
+    }
+
+    &--js {
+      height: 113px;
+    }
+
+    &--sketch {
+      width: 100px;
+      height: 92px;
     }
   }
 
