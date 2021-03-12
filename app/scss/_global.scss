@@ -112,7 +112,7 @@ p {
 
 .btn {
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 500;
   color: $white;
   text-transform: uppercase;
   padding: 19px 30px;
@@ -120,4 +120,8 @@ p {
   outline: transparent;
   background: linear-gradient(90deg, #AB07C6 0%, #4340D1 106.31%);
   border-radius: 30px;
+
+  &:hover {
+    background: linear-gradient(90deg, #4340D1 0%, #AB07C6 106.31%);
+  }
 }

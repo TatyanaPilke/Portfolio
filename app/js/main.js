@@ -1,5 +1,22 @@
-  //  start SWIPER skills
 
+// start back to top 
+let btn = $('.button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+// end back to top 
+
+//  start SWIPER skills
   var swiper = new Swiper('.skills__container', {
     spaceBetween: 30,
     slidesPerView: 9,
@@ -15,12 +32,10 @@
       dynamicBullets: true,
     },
   });
-  
 //  end SWIPER  
 
  //  start SWIPER reviews
-
- var swiper = new Swiper('.reviews__container', {
+  var swiper = new Swiper('.reviews__container', {
   slidesPerView: 3,
   spaceBetween: 30,
   pagination: {
@@ -29,6 +44,17 @@
   },
 });
 //  end SWIPER reviews
+
+// Anchor links  
+$(document).ready(function(){
+  $("#header-menu").on("click","a", function (event) {
+      event.preventDefault();
+      var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+      $('body,html').animate({scrollTop: top}, 1500);
+  });
+});
+// 
 
 // start ACCORDION(FAQ) 
 
