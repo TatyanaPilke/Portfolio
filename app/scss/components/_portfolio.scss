@@ -81,7 +81,14 @@
     max-width: 390px;
     height: 390px;
     object-fit: cover;
-    margin: 0 35px 35px 0;;
+    margin: 0 35px 35px 0;
+    position: relative;
+    @include transition;
+   
+
+    &:hover .portfolio__hover {
+      opacity: 1;
+    }
 
     &:before {
       content: "";
@@ -149,10 +156,35 @@
   }
 
   &__img {
-    max-width: 390px;
-    max-height: 390px;
+    width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  &__hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+    max-width: 390px;
+    max-height: 390px;
+    background-color: rgba(72, 67, 67, 0.71);
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+  }
+
+  &__text-hover {
+    margin-bottom: 20px;
+  }
+
+  &__link-hover {
+    position: absolute;
+    bottom: 40px;
   }
 
   &__line {

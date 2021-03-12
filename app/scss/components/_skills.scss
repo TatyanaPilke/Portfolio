@@ -6,25 +6,23 @@
   position: relative;
 
   &__line {
+    bottom: 0;
     opacity: 1;
 
     &--1 {
       width: 80px;
       background-color: #84468E;
-      bottom: 0;
       left: 15%;
     }
 
     &--2 {
       background-color: #A368AC;
-      bottom: 0;
       left: 39.3%;
     }
 
     &--3 {
       width: 80px;
       background-color: #DCB4E2;
-      bottom: 0;
       right: 0;
     }
   }
@@ -110,6 +108,17 @@
 
     &--js {
       height: 113px;
+    }
+
+    &--gulp {
+      width: 57px;
+      height: 120px;
+      margin-left: 20px;
+    }
+
+    &--npm {
+      width: 100px;
+      height: 89px;
     }
 
     &--sketch {

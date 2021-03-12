@@ -134,44 +134,38 @@
 
   &__decor-line {
     position: absolute;
+    bottom: 0;
+    opacity: 1;
+    
     &--one {
       width: 100%;
       background-color: $bg-skills;
-      bottom: 0;
-      opacity: 1;
     }
 
     &--two {
       width: 150px;
       background-color: #E5E9F3;
-      bottom: 0;
-      opacity: 1;
-      left: 400px;
+      left: 23%;
     }
 
     &--three {
       width: 120px;
       background-color: #DA8EE7;
       bottom: 10px;
-      opacity: 1;
-      right: 560px;
+      right: 29.5%;
     }
 
     &--four {
       width: 160px;
       background-color: #E5E9F3;
-      bottom: 0;
-      opacity: 1;
-      right: 400px;
+      right: 22.5%;
     }
 
     &--five {
       width: 80px;
       height: 30px;
       background-color: $bg-skills;
-      bottom: 0;
-      opacity: 1;
-      right: 100px;
+      right: 6%;
     }
 
     &--six {
@@ -179,8 +173,7 @@
       height: 10px;
       background-color: $bg-skills;
       bottom: 10px;
-      opacity: 1;
-      left: 50px;
+      left: 3%;
     }
   }
 }
