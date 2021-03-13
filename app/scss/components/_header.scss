@@ -50,18 +50,42 @@
   }
 
   &__title {
-    letter-spacing: 0.09em;
     font-size: 48px;
     font-weight: 500;
+    letter-spacing: 0.09em;
+    animation: title 3s;
+  }
+
+  @keyframes title {
+    0% {
+      transform: scale(0, 0);
+    }
+
+    100% {
+      transform: scale(1, 1);
+    }
   }
 
   &__title-md {
     display: block;
+    margin: 0 auto;
     letter-spacing: 0.04em;
     font-size: 30px;
     font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden; 
+    animation: animated-text 4s steps(29, end) 1s 1 normal both;
   }
 
+  @keyframes animated-text{
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 560px;
+    }
+  }
+  
   &__btn {
     margin: 0 auto;
     z-index: 4;
@@ -100,12 +124,12 @@
       left: -700px;
       background: linear-gradient(to right, rgba(0, 0, 0, 0), $line);
       animation: span1 2s linear infinite;
-      animation-delay: 1s;
+      animation-delay: 2s;
     }
 
     @keyframes span1 {
       0% {
-        left: -700px
+        left: -700px;
       }
 
       100% {
@@ -120,7 +144,7 @@
       right: 0;
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0), $line);
       animation: span2 2s linear infinite;
-      animation-delay: 2s;
+      animation-delay: 3s;
     }
 
     @keyframes span2 {
@@ -140,7 +164,7 @@
       bottom: 0px;
       background: linear-gradient(to left, rgba(0, 0, 0, 0), $line);
       animation: span3 2s linear infinite;
-      animation-delay: 3s;
+      animation-delay: 4s;
     }
 
     @keyframes span3 {
@@ -160,7 +184,7 @@
       left: 0px;
       background: linear-gradient(to top, rgba(0, 0, 0, 0), $line);
       animation: span4 2s linear infinite;
-      animation-delay: 4s;
+      animation-delay: 5s;
     }
 
     @keyframes span4 {
@@ -229,8 +253,8 @@
     display: block;
     width: 15px;
     height: 15px;
-    border-bottom: 5px solid $white;
-    border-right: 5px solid $white;
+    border-bottom: 5px solid $line;
+    border-right: 5px solid $line;
     transform: rotate(45deg);
     margin: -16px;
     animation: arrow-down 2s infinite;
@@ -271,7 +295,7 @@
     bottom: 20px;
     right: 40px;
     transition: background-color .3s,
-    opacity .5s, visibility .5s;
+      opacity .5s, visibility .5s;
     opacity: 0.7;
     // visibility: hidden;
     z-index: 1000;
@@ -304,6 +328,6 @@
   }
 
 
-  
-  
+
+
 }

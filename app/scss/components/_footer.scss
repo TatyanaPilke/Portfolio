@@ -203,6 +203,22 @@
     }
   }
 
+  &__bottom {
+    padding: 10px 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color:rgba(31, 28, 28, 0.67)
+  }
+
+  &__copyright {
+    font-size: 13px;
+    font-weight: 400;
+    color:rgba(255, 255, 255, 0.2)
+  }
+
+  // START FOOTER ANIMATION BACKGROUND 
   .area {
     width: 100%;
     height: 100vh;
@@ -318,7 +334,6 @@
       opacity: 0;
       border-radius: 50%;
     }
-
   }
-
+// END FOOTER ANIMATION BACKGROUND 
 }

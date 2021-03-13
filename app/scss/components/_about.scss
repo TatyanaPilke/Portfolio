@@ -70,7 +70,9 @@
   }
 
   &__text {
-    max-width: 1015px;
+    display: block;
+    max-width: 880px;
+    padding-right: 10px;
     color: $text;
     line-height: 32px;
     font-size: 20px;
@@ -78,10 +80,10 @@
     text-overflow: ellipsis;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 19;
+    -webkit-line-clamp: 20;
     -webkit-box-orient: vertical;
   }
-  
+
   &__line {
     position: absolute;
     display: block;
@@ -136,7 +138,7 @@
     position: absolute;
     bottom: 0;
     opacity: 1;
-    
+
     &--one {
       width: 100%;
       background-color: $bg-skills;
