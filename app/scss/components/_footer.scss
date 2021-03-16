@@ -1,7 +1,7 @@
 .footer {
   background-color: $bg-skills;
   position: relative;
-  padding: 70px 0 160px;
+  padding: 100px 0 160px;
 
   &__title {
     width: 300px;
@@ -30,7 +30,7 @@
       right: 0;
       width: 145px;
       height: 70px;
-      top: -8px;
+      top: -10px;
     }
   }
 
@@ -96,6 +96,10 @@
     position: relative;
     margin-right: 10px;
     font-style: normal;
+
+    &:hover {
+      box-shadow: 0 0 5px 1px #a5a5a7;
+    }
 
     &:last-child {
       margin-right: 0;

@@ -45,7 +45,7 @@ btn.on('click', function(e) {
 });
 //  end SWIPER reviews
 
-// Anchor links  
+// Anchor links in header
 $(document).ready(function(){
   $("#header-menu").on("click","a", function (event) {
       event.preventDefault();
@@ -58,26 +58,26 @@ $(document).ready(function(){
 
 // start ACCORDION(FAQ) 
 
-  // $(function () {
+  $(function () {
 
-  //   $.fn.accordion = function () {
-  //     const trigger = $(this).find('.accordion-trigger');
-  //     const collapse = $(this).find('.accordion-collapse');
+    $.fn.accordion = function () {
+      const trigger = $(this).find('.accordion-trigger');
+      const collapse = $(this).find('.accordion-collapse');
 
-  //     $(trigger).each(function () {
-  //       $(this).on('click', function () {
-  //         $(this).siblings('.accordion-collapse').slideToggle();
-  //         $(this).toggleClass('accordion-open');
-  //         $(this).toggleClass('active');
-  //         $(this).parent().siblings('.accordion-item').find('.accordion-trigger').removeClass('accordion-open');
-  //         $(this).parent().siblings('.accordion-item').find('.accordion-collapse').slideUp();
-  //       });
-  //     });
-  //   };
+      $(trigger).each(function () {
+        $(this).on('click', function () {
+          $(this).siblings('.accordion-collapse').slideToggle();
+          $(this).toggleClass('accordion-open');
+          $(this).toggleClass('active');
+          $(this).parent().siblings('.accordion-item').find('.accordion-trigger').removeClass('accordion-open');
+          $(this).parent().siblings('.accordion-item').find('.accordion-collapse').slideUp();
+        });
+      });
+    };
 
-  //   $('.accordion').accordion();
+    $('.accordion').accordion();
  
-  // });
+  });
   // end ACCORDION 
 
   
