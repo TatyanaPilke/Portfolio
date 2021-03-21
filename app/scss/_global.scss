@@ -44,7 +44,6 @@ p {
   margin: 0;
   padding: 0;
 }
-
 .container {
   max-width: 1270px;
   margin: 0 auto;
@@ -84,6 +83,10 @@ p {
 
 .f-jcs {
   justify-content: flex-start;
+}
+
+.fd-c {
+  flex-direction: column;
 }
 
 .hidden {

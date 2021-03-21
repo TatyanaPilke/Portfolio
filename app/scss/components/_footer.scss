@@ -96,9 +96,10 @@
     position: relative;
     margin-right: 10px;
     font-style: normal;
+    @include transition;
 
     &:hover {
-      box-shadow: 0 0 5px 1px #a5a5a7;
+      box-shadow: 0 0 7px 2px #a5a5a7;
     }
 
     &:last-child {

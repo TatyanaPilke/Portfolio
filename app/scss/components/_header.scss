@@ -49,6 +49,29 @@
     margin: 20px 50px 0;
   }
 
+  &__lang {
+    z-index: 5;
+  }
+
+  &__translate {
+    margin-left: 10px;
+    color: rgb(157, 133, 160);
+    margin: auto 5px;
+    font-size: 16px;
+
+    &:hover {
+      color: $line;
+    }
+  }
+
+  &__language {
+    display: none;
+
+    &:checked + .header__translate {
+      color: $line;
+    }
+  }
+
   &__title {
     font-size: 48px;
     font-weight: 500;
@@ -70,8 +93,8 @@
     display: block;
     margin: 0 auto;
     letter-spacing: 0.04em;
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 26px;
+    font-weight: 400;
     white-space: nowrap;
     overflow: hidden;
     animation: animated-text 4s steps(29, end) 1s 1 normal both;
@@ -98,7 +121,7 @@
     text-align: center;
     z-index: 3;
     position: relative;
-    margin: 0 auto 170px;
+    margin: 0 auto 120px;
     padding: 50px 70px 70px;
     text-transform: uppercase;
     background-color: transparent;
@@ -205,6 +228,7 @@
     &__list {
       display: inline-block;
       margin-left: 50px;
+      position: relative;
 
       &:first-child {
         margin-left: 0;
@@ -213,6 +237,7 @@
 
     &__link {
       color: $title;
+      color: $white;
       font-size: 20px;
       font-weight: 500;
       letter-spacing: 0.1em;
@@ -239,6 +264,21 @@
       &:hover:after {
         transform: scaleX(1);
         transform-origin: left;
+      }
+
+      &--line {
+        margin-right: 50px;
+        &:before {
+          content: "";
+          width: 2px;
+          height: 25px;
+          background-color: $white;
+          position: absolute;
+          transform: rotate(-180deg);
+          top: 0;
+          right: -25px;
+          overflow: visible;
+        }
       }
     }
   }
