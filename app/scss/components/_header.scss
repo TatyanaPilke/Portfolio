@@ -49,35 +49,6 @@
     margin: 20px 50px 0;
   }
 
-  &__lang {
-    z-index: 5;
-  }
-
-  &__translate {
-    margin-left: 10px;
-    color: rgb(157, 133, 160);
-    margin: auto 5px;
-    font-size: 16px;
-
-    &:hover {
-      color: $line;
-    }
-  }
-
-  &__language {
-    display: none;
-
-    &:checked+.header__translate {
-      color: $line;
-    }
-
-    &--en {
-      &:checked+.footer-form__input::placeholder {
-        opacity: 0;
-      }
-    }
-  }
-
   &__title {
     font-size: 48px;
     font-weight: 500;
@@ -300,22 +271,6 @@
       &:hover:after {
         transform: scaleX(1);
         transform-origin: left;
-      }
-
-      &--line {
-        margin-right: 50px;
-
-        &:before {
-          content: "";
-          width: 2px;
-          height: 25px;
-          background-color: $white;
-          position: absolute;
-          transform: rotate(-180deg);
-          top: 0;
-          right: -25px;
-          overflow: visible;
-        }
       }
     }
   }
