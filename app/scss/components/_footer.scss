@@ -74,6 +74,11 @@
     color: $white;
     font-style: normal;
     padding-left: 40px;
+    @include transition;
+
+    &--hover:hover {
+      color: #DA8EE7;
+    }
   }
 
   &__icon {
@@ -175,15 +180,14 @@
       transition: border 0.3s ease;
 
       &::placeholder {
-        color: $text-form;
+        color: #DA8EE7;
         letter-spacing: 0.06em;
         font-size: 14px;
-        opacity: 0.7;
+        opacity: 0.3;
         font-weight: 400;
-        
 
         &:hover {
-          color: #DA8EE7;
+          color: $text-form;
         }
       }
 

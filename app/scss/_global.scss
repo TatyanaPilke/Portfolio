@@ -123,6 +123,7 @@ p {
   outline: transparent;
   background: linear-gradient(90deg, #AB07C6 0%, #4340D1 106.31%);
   border-radius: 30px;
+  transition: all 0.5 ease;
 
   &:hover {
     background: linear-gradient(90deg, #4340D1 0%, #AB07C6 106.31%);

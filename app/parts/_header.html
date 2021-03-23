@@ -1,10 +1,11 @@
 <!--START section HEADER  -->
 
 <header class="header" style="background-image: url(images/bg-header.jpg)">
+  
   <div class="header__wrapper">
     <div class="header__top d-flex f-jcsb f-aic">
       <a class="logo" href="#">
-        <img class="logo__img" src="images/logo.svg" alt="Logo">
+        <img class="logo__img" src="images/logo.svg" alt="Logo" width="180" height="62">
       </a>
       <div class="header__lang d-flex">
         <nav class="menu" id="header-menu">
@@ -28,7 +29,7 @@
         </nav>
         <input type="radio" class="header__language" checked="checked" id="checkFR" name="language">
         <label class="header__translate" id="ru" for="checkFR">Ru</label>
-        <input type="radio" class="header__language" id="checkEN" name="language">
+        <input type="radio" class="header__language header__language--en" id="checkEN" name="language">
         <label class="header__translate" id="en" for="checkEN">En</label>
       </div>
     </div>
@@ -39,7 +40,10 @@
       <span class="header__line header__line--right"></span>
       <span class="header__line header__line--bottom"></span>
       <span class="header__line header__line--left"></span>
-      <h1 class="header__title lang" key="name">Татьяна Пильке</h1>
+      <h1 class="header__title lang" key="name">
+        <span class="header__title-bg">Татьяна </span> 
+        <span class="header__title-bg2">Пильке</span>
+      </h1>
       <span class="header__title-md lang" key="html">html - верстальщик</span>
     </div>
     <a class="header__btn btn lang" href="#order" key="order">Заказать верстку</a>

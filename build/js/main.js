@@ -83,20 +83,4 @@ $(function () {
 });
 // end ACCORDION 
 
-$(function () {
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-      $('#go-top').addClass('vis');
-    } else {
-      $('#go-top').removeClass('vis');
-    }
-  });
-  $('#go-top').on('click', function () {
-    $('body,html').animate({
-      scrollTop: 0
-    }, 800);
-    return false;
-  });
-});
-
 

@@ -85,7 +85,6 @@
     position: relative;
     @include transition;
    
-
     &:hover .portfolio__hover {
       opacity: 1;
     }
@@ -279,6 +278,5 @@
 
   .accordion-text {
     padding: 0;
-    
   }
 }

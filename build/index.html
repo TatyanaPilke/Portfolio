@@ -15,10 +15,11 @@
 <!--START section HEADER  -->
 
 <header class="header" style="background-image: url(images/bg-header.jpg)">
+  
   <div class="header__wrapper">
     <div class="header__top d-flex f-jcsb f-aic">
       <a class="logo" href="#">
-        <img class="logo__img" src="images/logo.svg" alt="Logo">
+        <img class="logo__img" src="images/logo.svg" alt="Logo" width="180" height="62">
       </a>
       <div class="header__lang d-flex">
         <nav class="menu" id="header-menu">
@@ -42,7 +43,7 @@
         </nav>
         <input type="radio" class="header__language" checked="checked" id="checkFR" name="language">
         <label class="header__translate" id="ru" for="checkFR">Ru</label>
-        <input type="radio" class="header__language" id="checkEN" name="language">
+        <input type="radio" class="header__language header__language--en" id="checkEN" name="language">
         <label class="header__translate" id="en" for="checkEN">En</label>
       </div>
     </div>
@@ -53,7 +54,10 @@
       <span class="header__line header__line--right"></span>
       <span class="header__line header__line--bottom"></span>
       <span class="header__line header__line--left"></span>
-      <h1 class="header__title lang" key="name">Татьяна Пильке</h1>
+      <h1 class="header__title lang" key="name">
+        <span class="header__title-bg">Татьяна </span> 
+        <span class="header__title-bg2">Пильке</span>
+      </h1>
       <span class="header__title-md lang" key="html">html - верстальщик</span>
     </div>
     <a class="header__btn btn lang" href="#order" key="order">Заказать верстку</a>
@@ -97,7 +101,7 @@
       иметь макет сайта (PSD, FIGMA), заполнить форму или написать смс-сообщение: “Привет, мне нужен маг”! Я
       мигом прилечу, и с энтузиазмом займусь волшебством!
     </p>
-    <img class="about__img" src="images/photo.png" alt="foto">
+    <img class="about__img" src="images/photo.png" alt="foto" width="617" height="596">
   </div>
   <span class="about__line about__line--top"></span>
   <span class="about__square about__square--left"></span>
@@ -217,14 +221,14 @@
     <div class="portfolio__inner">
       <div class="portfolio__box d-flex f-jcs">
         <div class="portfolio__works portfolio__works--1">
-          <img class="portfolio__img" src="images/image1.jpg" alt="#">
+            <img class="portfolio__img" src="images/bg1.jpg" alt="#">
           <div class="portfolio__hover">
             <p class="portfolio__text-hover">Ля-ля-ля</p>
-            <a class="portfolio__link-hover btn" href="#">Смотреть проект ...</a>
+            <a class="portfolio__link-hover btn" href="https://tatyanapilke.github.io/Awards/build/#" target="blank">Смотреть проект ...</a>
           </div>
         </div>
         <div class="portfolio__works">
-          <img class="portfolio__img" src="images/image1.jpg" alt="#">
+          <img class="portfolio__img" src="images/bg2.jpg" alt="#">
           <div class="portfolio__hover">
             <p class="portfolio__text-hover">Ля-ля-ля</p>
             <a class="portfolio__link-hover btn" href="#">Смотреть проект ...</a>
@@ -233,37 +237,37 @@
       </div>
       <div class="portfolio__box d-flex">
         <div class="portfolio__works">
-          <img class="portfolio__img" src="images/image1.jpg" alt="#">
+          <img class="portfolio__img" src="images/bg3.jpg" alt="#">
           <div class="portfolio__hover">
             <p class="portfolio__text-hover">Ля-ля-ля</p>
-            <a class="portfolio__link-hover btn" href="#">Смотреть проект ...</a>
+            <a class="portfolio__link-hover btn" href="https://tatyanapilke.github.io/Portfolio/build/" target="blank">Смотреть проект ...</a>
           </div>
         </div>
         <div class="portfolio__works">
-          <img class="portfolio__img" src="images/image1.jpg" alt="#">
+          <img class="portfolio__img" src="images/bg4.jpg" alt="#">
           <div class="portfolio__hover">
             <p class="portfolio__text-hover">Ля-ля-ля</p>
             <a class="portfolio__link-hover btn" href="#">Смотреть проект ...</a>
           </div>
         </div>
         <div class="portfolio__works portfolio__works--5">
-          <img class="portfolio__img" src="images/image1.jpg" alt="#">
+          <img class="portfolio__img" src="images/bg5.jpg" alt="#">
           <div class="portfolio__hover">
             <p class="portfolio__text-hover">Ля-ля-ля</p>
-            <a class="portfolio__link-hover btn" href="#">Смотреть проект ...</a>
+            <a class="portfolio__link-hover btn" href="https://tatyanapilke.github.io/Yacht/build/" target="blank">Смотреть проект ...</a>
           </div>
         </div>
       </div>
       <div class="portfolio__box d-flex f-jce">
         <div class="portfolio__works">
-          <img class="portfolio__img" src="images/image1.jpg" alt="#">
+          <img class="portfolio__img" src="images/" alt="#">
           <div class="portfolio__hover">
             <p class="portfolio__text-hover">Ля-ля-ля</p>
             <a class="portfolio__link-hover btn" href="#">Смотреть проект ...</a>
           </div>
         </div>
         <div class="portfolio__works portfolio__works--7">
-          <img class="portfolio__img" src="images/image1.jpg" alt="#">
+          <img class="portfolio__img" src="images/" alt="#">
           <div class="portfolio__hover">
             <p class="portfolio__text-hover">Ля-ля-ля</p>
             <a class="portfolio__link-hover btn" href="#">Смотреть проект ...</a>
@@ -272,13 +276,13 @@
       </div>
       <div class="portfolio__box d-flex f-jcc">
         <div class="portfolio__works portfolio__works--8">
-          <img class="portfolio__img" src="images/image1.jpg" alt="#">
+          <img class="portfolio__img" src="images/" alt="#">
           <div class="portfolio__hover">
             <p class="portfolio__text-hover">Ля-ля-ля</p>
             <a class="portfolio__link-hover btn" href="#">Смотреть проект ...</a>
           </div>
         </div>
-      </div>
+      </div> 
 
       <div class="accordion">
         <div class="portfolio__ask lang" key="faq">
@@ -286,77 +290,72 @@
         </div>
         <div class="accordion-item">
           <div class="accordion-trigger lang" key="make-order">Как заказать вёрстку?</div>
-          <div class="accordion-collapse">
+          <div class="accordion-collapse lang" key="call">
             Свяжитесь со мной любым удобным для вас способом (вы можете позвонить, написать в соц.сетях(FB), в telegram
             или
             заполнить форму на сайте).
           </div>
         </div>
         <div class="accordion-item">
-          <div class="accordion-trigger">Как проходит процесс вёрстки от получения задания до его сдачи?</div>
+          <div class="accordion-trigger lang" key="deal">Как проходит процесс вёрстки от получения задания до его сдачи?
+          </div>
           <div class="accordion-collapse">
             <ol class="accordion-item2">
-              <li class="accordion-text">
+              <li class="accordion-text lang" key="list1">
                 Получения от заказчика макета, шрифтов, технического задания(ТЗ).
               </li>
-              <li class="accordion-text">
+              <li class="accordion-text lang" key="list2">
                 Оценка проекта(анализ всех материалов, формирование сроков и стоимости вёрстки).
               </li>
-              <li class="accordion-text">
+              <li class="accordion-text lang" key="list3">
                 Согласование всех нюансов и пожеланий заказчика для реализации задания.
               </li>
-              <li class="accordion-text">
+              <li class="accordion-text lang" key="list4">
                 Заказчик оплачивает не менее 50% от всей стоимости проекта.
               </li>
-              <li class="accordion-text">
+              <li class="accordion-text lang" key="list5">
                 Вёрстка блоков и демонстрация промежуточного результата заказчику(на хостинге или Github Pages).
               </li>
-              <li class="accordion-text">
+              <li class="accordion-text lang" key="list6">
                 Тестирование проекта.
               </li>
-              <li class="accordion-text">
+              <li class="accordion-text lang" key="list7">
                 После полной оплаты вы получаете архив с
                 файлами готовой вёрстки.
               </li>
-              <li class="accordion-text">
+              <li class="accordion-text lang" key="list8">
                 Передача готовой работы заказчику.
               </li>
             </ol>
-            <p class="accordion-text">
-              P.S Все неточности по ТЗ и макету исправляю в срочном порядке бесплатно. Если заказчик желает дополнить
+            <p class="accordion-text lang" key="list9">
+              P.S. Все неточности по ТЗ и макету исправляю в срочном порядке бесплатно. Если заказчик желает дополнить
               вёрстку элементами, которых нет в ТЗ - такие правки оплачиваются дополнительно.
             </p>
           </div>
         </div>
         <div class="accordion-item">
-          <div class="accordion-trigger">Нет ТЗ. Что делать?</div>
-          <div class="accordion-collapse">
-            Помогу составить подробное ТЗ по макету, так как, верстальщику намного проще работать с конкретными задачами,
+          <div class="accordion-trigger lang" key="task">Нет технического задания(ТЗ). Что делать?</div>
+          <div class="accordion-collapse lang" key="help">
+            Помогу составить подробное ТЗ по макету, так как, верстальщику намного проще работать с конкретными
+            задачами,
             когда предусмотрены интерактив, hover-эффекты, анимации и прочее.
           </div>
         </div>
         <div class="accordion-item">
-          <div class="accordion-trigger">Сколько стоит вёрстка?</div>
-          <div class="accordion-collapse">
+          <div class="accordion-trigger lang" key="price">Сколько стоит вёрстка?</div>
+          <div class="accordion-collapse lang" key="every">
             Каждый проект рассчитывается индивидуально, поскольку всё зависит от сложности макета, количества страниц,
             наличия интерактива и прочих требований.
           </div>
         </div>
         <div class="accordion-item">
-          <div class="accordion-trigger">Вёрстка/шаблон под Wordpress?</div>
-          <div class="accordion-collapse">
-            Вёрстку под какую-либо CMS не делаю, вы получаете файлы с чистым HTML-кодом, с которыми дальше должен
-            работать backend-программист для посадки на любую систему управления сайтом (CMS).
-          </div>
-        </div>
-        <div class="accordion-item">
-          <div class="accordion-trigger">Способы оплаты?</div>
-          <div class="accordion-collapse">
-            Оплату на банковскую карту или кошельки платёжных систем WebMoney, Payoneer .
+          <div class="accordion-trigger lang" key="pay">Способы оплаты?</div>
+          <div class="accordion-collapse lang" key="payments">
+            Оплату на банковскую карту или кошельки платёжных систем WebMoney, Payoneer.
           </div>
         </div>
       </div>
-      <a class="portfolio__btn btn" href="#order">Заказать верстку</a>
+      <a class="portfolio__btn btn lang" key="order" href="#order">Заказать верстку</a>
     </div>
   </div>
 </section>
@@ -366,13 +365,13 @@
   <div class="container">
     <span class="decor-line reviews__line reviews__line--3"></span>
     <span class="decor-line reviews__line reviews__line--4"></span>
-    <h2 class="reviews__title title">
+    <h2 class="reviews__title title lang" key="reviews">
       Отзывы
     </h2>
-    <p class="reviews__text-md">
+    <p class="reviews__text-md lang" key="emotion">
       Ваши эмоции и теплые отзывы для меня бесценны!
     </p>
-    <span class="reviews__text-sm">
+    <span class="reviews__text-sm lang" key="trust">
       Спасибо за доверие!
     </span>
     <div class="swiper-container reviews__container">
@@ -381,7 +380,7 @@
           <div class="reviews__slide-box">
 
             <div class="reviews__slide">
-              <p class="reviews__text">
+              <p class="reviews__text lang" key="reviews1">
                 Большое спасибо Татьяне, за ёё
                 качественную работу,
                 коммуникабельность
@@ -389,116 +388,116 @@
               </p>
             </div>
             <div class="reviews__profile d-flex f-aic">
-              <img class="reviews__img" src="images/photo2.jpg" alt="foto">
-              <span class="reviews__name">Денис Черныш</span>
+              <div class="reviews__img reviews__img--1" style="background-image: url(images/css_sprites.png);"></div>
+              <span class="reviews__name lang" key="name1">Денис Черныш</span>
             </div>
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="reviews__slide">
-            <p class="reviews__text">
+            <p class="reviews__text lang" key="reviews2">
               Удобная коммуникация и приятное сотрудничество.
               Рекомендую как надёжного исполнителя! Спасибо за работу!
             </p>
           </div>
           <div class="reviews__profile d-flex f-aic">
-            <img class="reviews__img" src="images/photo4.jpg" alt="foto">
-            <span class="reviews__name">Алина Васильева</span>
+            <div class="reviews__img reviews__img--2" style="background-image: url(images/css_sprites.png);"></div>
+            <span class="reviews__name lang" key="name2">Алина Васильева</span>
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="reviews__slide">
-            <p class="reviews__text">
+            <p class="reviews__text lang" key="reviews3">
               Доволен сотрудничеством.
               Всё отлично, включая расценки. Очень легко и приятно общаться. Рекомендую!!!
             </p>
           </div>
           <div class="reviews__profile d-flex f-aic">
-            <img class="reviews__img" src="images/photo3.jpg" alt="foto">
-            <span class="reviews__name">Евгений Чебыкин</span>
+            <div class="reviews__img reviews__img--3" style="background-image: url(images/css_sprites.png);"></div>
+            <span class="reviews__name lang" key="name3">Евгений Чебыкин</span>
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="reviews__slide">
-            <p class="reviews__text">
+            <p class="reviews__text lang" key="reviews4">
               Очень понравилось работать с Танюшей. Лояльная, терпеливая и все делает качественно.
               В будущем буду ее еще привлекать к реализации проектов).
             </p>
           </div>
           <div class="reviews__profile d-flex f-aic">
-            <img class="reviews__img" src="images/photo1.jpg" alt="foto">
-            <span class="reviews__name">Роман Гринченко</span>
+            <div class="reviews__img reviews__img--4" style="background-image: url(images/css_sprites.png);"></div>
+            <span class="reviews__name lang" key="name3">Роман Гринченко</span>
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="reviews__slide">
-            <p class="reviews__text">
+            <p class="reviews__text lang" key="reviews5">
               Спасибо за проделанную работу! Отличный дизайн, качество и сроки выполнения.
               Мои самые наилучшие рекомендации.
               Успехов вам и процветания!!!
             </p>
           </div>
           <div class="reviews__profile d-flex f-aic">
-            <img class="reviews__img" src="images/photo5.jpg" alt="foto">
-            <span class="reviews__name">Анатолий Титок</span>
+            <div class="reviews__img reviews__img--5" style="background-image: url(images/css_sprites.png);"></div>
+            <span class="reviews__name lang" key="name5">Анатолий Титок</span>
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="reviews__slide">
-            <p class="reviews__text">
+            <p class="reviews__text lang" key="reviews6">
               Продолжили работу по текущему проекту, все, что я попросил, было сделано в срок.
               Я впечатлен, очень хорошая робота.
             </p>
           </div>
           <div class="reviews__profile d-flex f-aic">
-            <img class="reviews__img" src="images/photo6.jpg" alt="foto">
-            <span class="reviews__name">Юра Волошанський</span>
+            <div class="reviews__img reviews__img--6" style="background-image: url(images/css_sprites.png);"></div>
+            <span class="reviews__name lang" key="name6">Юра Волошанський</span>
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="reviews__slide">
-            <p class="reviews__text">
+            <p class="reviews__text lang" key="reviews7">
               Была проделана большая работа!
               Очень круто все сделано, были правки,
               все сделано в лучшем виде. Крайне рекомендую!
             </p>
           </div>
           <div class="reviews__profile d-flex f-aic">
-            <img class="reviews__img" src="images/photo7.jpg" alt="foto">
-            <span class="reviews__name">Евгения Колесникова</span>
+            <div class="reviews__img reviews__img--7" style="background-image: url(images/css_sprites.png);"></div>
+            <span class="reviews__name lang" key="name7">Евгения Колесникова</span>
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="reviews__slide">
-            <p class="reviews__text">
+            <p class="reviews__text lang" key="reviews8">
               Необходима была адаптивная верстка по макету в figma. 
               Отправил запрос, оперативно получил ответ, обсудили все вопросы. 
               Качество!  
             </p>
           </div>
           <div class="reviews__profile d-flex f-aic">
-            <img class="reviews__img" src="images/photo8.jpg" alt="foto">
-            <span class="reviews__name">Ясир Рой</span>
+            <div class="reviews__img reviews__img--8" style="background-image: url(images/css_sprites.png);"></div>
+            <span class="reviews__name lang" key="name8">Ясир Рой</span>
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="reviews__slide">
-            <p class="reviews__text">
+            <p class="reviews__text lang" key="reviews9">
               Отличная работа, по адекватной цене, грамотный и 
               читабельный код сразу виден профессионализм! Спасибо!
             </p>
           </div>
           <div class="reviews__profile d-flex f-aic">
-            <img class="reviews__img" src="images/photo9.jpg" alt="foto">
-            <span class="reviews__name">Владимир Нагдалян</span>
+            <div class="reviews__img reviews__img--9" style="background-image: url(images/css_sprites.png);"></div>
+            <span class="reviews__name lang" key="name9">Владимир Нагдалян</span>
           </div>
         </div>
       </div>
@@ -508,7 +507,7 @@
 </section>
 <footer class="footer area" id="contact">
   <div class="container">
-    <h2 class="footer__title title">
+    <h2 class="footer__title title lang" key="contact">
       Контакты
     </h2>
     <div class="footer__inner d-flex f-jcsb" style="background-image: url(images/bg-header.jpg);">
@@ -518,8 +517,8 @@
         </a>
 
         <address class="footer__address">
-          <a class="footer__contact" href="tel:+380930358535">
-            <svg class="footer__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+          <a class="footer__contact footer__contact--hover" href="tel:+380930358535">
+            <svg class="footer__icon footer__icon--hover" width="20" height="20" viewBox="0 0 20 20" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
                 <path
@@ -534,8 +533,8 @@
             </svg>
             + 38 093 035-85-35
           </a>
-          <a class="footer__contact" href="mailto:tatyana.pilke.web@gmail.com">
-            <svg class="footer__icon" width="24" height="16" viewBox="0 0 24 16" fill="none"
+          <a class="footer__contact footer__contact--hover" href="mailto:tatyana.pilke.web@gmail.com">
+            <svg class="footer__icon footer__icon--hover" width="24" height="16" viewBox="0 0 24 16" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M21.875 0.5H1.875C0.84125 0.5 0 1.34125 0 2.375V13.625C0 14.6587 0.84125 15.5 1.875 15.5H21.875C22.9088 15.5 23.75 14.6587 23.75 13.625V2.375C23.75 1.34125 22.9088 0.5 21.875 0.5ZM21.875 1.75C21.9125 1.75 21.9475 1.75375 21.9837 1.76L12.5688 8.03625C12.2063 8.2775 11.545 8.2775 11.1825 8.03625L1.7675 1.76C1.8025 1.75375 1.83875 1.75 1.87625 1.75H21.8762H21.875ZM21.875 14.25H1.875C1.53 14.25 1.25 13.97 1.25 13.625V2.9175L10.4887 9.07625C10.8775 9.335 11.3763 9.465 11.875 9.465C12.3737 9.465 12.8725 9.335 13.2613 9.07625L22.5 2.9175V13.625C22.5 13.97 22.22 14.25 21.875 14.25Z"
@@ -571,7 +570,7 @@
         </address>
       </div>
       <form class="footer-form" action="#" method="post" id="order">
-        <div class="footer-form__title">
+        <div class="footer-form__title lang" key="write">
           Напишите мне
         </div>
         <label class="footer-form__label">
@@ -584,7 +583,7 @@
           <input class="footer-form__input" type="tel" placeholder="Телефон *" required>
         </label>
         <textarea class="footer-form__input footer-form__textarea" placeholder="Сообщение *" required></textarea>
-        <button class="footer-form__btn btn" name="submit" type="submit">Отправить</button>
+        <button class="footer-form__btn btn lang" key="send" name="submit" type="submit">Отправить</button>
       </form>
     </div>
   </div>
