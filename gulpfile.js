@@ -23,32 +23,30 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./build/css'))
     .pipe(browserSync.reload({
       stream: true
-    }))
+    }));
 });
 
 gulp.task('style', function () {
   return gulp.src([
       'node_modules/normalize.css/normalize.css',
-      'node_modules/slick-carousel/slick/slick.css',
-      'node_modules/magnific-popup/dist/magnific-popup.css',
-      'node_modules/swiper/swiper-bundle.css'
+      'node_modules/swiper/swiper-bundle.css',
+      'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css'
     ])
     .pipe(concat('libs.min.css'))
     .pipe(cssmin())
     .pipe(gulp.dest('app/css'))
-    .pipe(gulp.dest('./build/css'))
+    .pipe(gulp.dest('./build/css'));
 });
 
 gulp.task('script', function () {
   return gulp.src([
-      'node_modules/slick-carousel/slick/slick.js',
-      'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
-      'node_modules/swiper/swiper-bundle.js'
+      'node_modules/swiper/swiper-bundle.js',
+      'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js'
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('app/js'))
-    .pipe(gulp.dest('./build/js'))
+    .pipe(gulp.dest('./build/js'));
 });
 
 gulp.task('fonts', function () {
@@ -70,7 +68,7 @@ gulp.task('html', function () {
     .pipe(gulp.dest('./build'))
     .pipe(browserSync.reload({
       stream: true
-    }))
+    }));
 });
 
 gulp.task('js', function () {
@@ -78,7 +76,7 @@ gulp.task('js', function () {
     .pipe(gulp.dest('./build/js'))
     .pipe(browserSync.reload({
       stream: true
-    }))
+    }));
 });
 
 gulp.task('browser-sync', function () {
@@ -90,9 +88,9 @@ gulp.task('browser-sync', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'))
-  gulp.watch('app/**/*.html', gulp.parallel('html'))
-  gulp.watch('app/js/*.js', gulp.parallel('js'))
+  gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'));
+  gulp.watch('app/**/*.html', gulp.parallel('html'));
+  gulp.watch('app/js/*.js', gulp.parallel('js'));
 });
 
-gulp.task('default', gulp.parallel('style', 'images', 'fonts', 'html', 'script', 'sass', 'watch', 'browser-sync'))
+gulp.task('default', gulp.parallel('style', 'images', 'fonts', 'html', 'script', 'sass', 'watch', 'browser-sync'));

@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Tatyana Pilke</title>
   <link rel="icon" href="images/icon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -54,7 +55,7 @@
       </h1>
       <span class="header__title-md">html - верстальщик</span>
     </div>
-    <a class="header__btn btn" href="#order">Заказать верстку</a>
+    <a class="header__btn btn" data-fancybox data-src="#modal" href="javascript:;">Заказать верстку</a>
   </div>
   <span class="decor-line decor-line--line1"></span>
   <span class="decor-line decor-line--line2"></span>
@@ -71,6 +72,25 @@
   </div>
   <!-- back to top  -->
   <a class="button"></a>
+
+  <div id="modal" style="display: none;">
+    <form class="footer-form" action="#" method="post" id="order">
+      <div class="footer-form__title header__title-form">
+        Напишите мне
+      </div>
+      <label class="footer-form__label">
+        <input class="footer-form__input" type="text" placeholder="Ваше имя *" required>
+      </label>
+      <label class="footer-form__label">
+        <input class="footer-form__input" type="email" placeholder="Email *" required>
+      </label>
+      <label class="footer-form__label">
+        <input class="footer-form__input" type="tel" placeholder="Телефон *" required>
+      </label>
+      <textarea class="footer-form__input footer-form__textarea" placeholder="Сообщение *" required></textarea>
+      <button class="footer-form__btn btn" name="submit" type="submit">Отправить</button>
+    </form>
+  </div>
 </header>
 
 <!--END section HEADER  -->
@@ -79,7 +99,8 @@
 <section class="about" style="background-image: url(images/bg-about.png);" id="about">
   <h2 class="about__title title">Обо мне</h2>
   <div class="about__content d-flex f-jcsb f-aic">
-    <p class="about__text">Здравствуйте! Меня зовут Татьяна! Я рада приветствовать вас на моём сайте. Если вы здесь -
+    <p class="about__text" data-simplebar>Здравствуйте! Меня зовут Татьяна! Я рада приветствовать вас на моём сайте.
+      Если вы здесь -
       значит, скорее всего, знаете что такое вёрстка и ищите опытного верстальщика для своего проекта. Если же нет, и
       слово верстальщик вам ничего не говорит, открою вам секрет. Только тсссссс! Верстальщик - это маг, который
       использует семантическую белую магию (HTML), умеет варить стильное зелье (CSS) и владеет динамическим языком
@@ -95,7 +116,7 @@
       иметь макет сайта (PSD, FIGMA), заполнить форму или написать смс-сообщение: “Привет, мне нужен маг”! Я
       мигом прилечу, и с энтузиазмом займусь волшебством!
     </p>
-    <img class="about__img" src="images/photo.png" alt="foto" width="617" height="596">
+      <img class="about__img" src="images/photo.png" alt="foto" width="617" height="596">
   </div>
   <span class="about__line about__line--top"></span>
   <span class="about__square about__square--left"></span>
@@ -349,8 +370,27 @@
           </div>
         </div>
       </div>
-      <a class="portfolio__btn btn" href="#order">Заказать верстку</a>
+      <a class="portfolio__btn btn" data-fancybox data-src="#modal" href="javascript:;">Заказать верстку</a>
     </div>
+  </div>
+
+  <div id="modal" style="display: none;">
+    <form class="footer-form" action="#" method="post" id="order">
+      <div class="footer-form__title header__title-form">
+        Напишите мне
+      </div>
+      <label class="footer-form__label">
+        <input class="footer-form__input" type="text" placeholder="Ваше имя *" required>
+      </label>
+      <label class="footer-form__label">
+        <input class="footer-form__input" type="email" placeholder="Email *" required>
+      </label>
+      <label class="footer-form__label">
+        <input class="footer-form__input" type="tel" placeholder="Телефон *" required>
+      </label>
+      <textarea class="footer-form__input footer-form__textarea" placeholder="Сообщение *" required></textarea>
+      <button class="footer-form__btn btn" name="submit" type="submit">Отправить</button>
+    </form>
   </div>
 </section>
 <section class="reviews" style="background-image: url(images/bg-reviews.jpg)" id="reviews">
@@ -372,7 +412,6 @@
       <div class="swiper-wrapper reviews__wrapper">
         <div class="swiper-slide">
           <div class="reviews__slide-box">
-
             <div class="reviews__slide">
               <p class="reviews__text">
                 Большое спасибо Татьяне, за ёё
@@ -471,9 +510,9 @@
         <div class="swiper-slide">
           <div class="reviews__slide">
             <p class="reviews__text">
-              Необходима была адаптивная верстка по макету в figma. 
-              Отправил запрос, оперативно получил ответ, обсудили все вопросы. 
-              Качество!  
+              Необходима была адаптивная верстка по макету в figma.
+              Отправил запрос, оперативно получил ответ, обсудили все вопросы.
+              Качество!
             </p>
           </div>
           <div class="reviews__profile d-flex f-aic">
@@ -485,7 +524,7 @@
         <div class="swiper-slide">
           <div class="reviews__slide">
             <p class="reviews__text">
-              Отличная работа, по адекватной цене, грамотный и 
+              Отличная работа, по адекватной цене, грамотный и
               читабельный код сразу виден профессионализм! Спасибо!
             </p>
           </div>
@@ -514,13 +553,13 @@
           <a class="footer__contact footer__contact--hover" href="tel:+380930358535">
             <svg class="footer__icon footer__icon--hover" width="20" height="20" viewBox="0 0 20 20" fill="none"
               xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip1)">
+              <g clip-path="url(#clip0)">
                 <path
                   d="M16 20C14.229 20 12.345 19.498 10.4 18.508C8.607 17.595 6.836 16.288 5.278 14.728C3.72 13.168 2.415 11.395 1.503 9.601C0.515001 7.655 0.0130005 5.771 0.0130005 4C0.0130005 2.852 1.083 1.743 1.542 1.32C2.203 0.711 3.243 0 3.999 0C4.375 0 4.815 0.246 5.386 0.774C5.811 1.168 6.29 1.702 6.769 2.318C7.058 2.69 8.499 4.589 8.499 5.5C8.499 6.247 7.654 6.767 6.76 7.316C6.414 7.528 6.057 7.748 5.799 7.955C5.523 8.176 5.474 8.293 5.466 8.319C6.415 10.685 9.316 13.586 11.681 14.534C11.702 14.527 11.819 14.481 12.044 14.201C12.251 13.943 12.471 13.585 12.683 13.24C13.233 12.346 13.752 11.501 14.499 11.501C15.41 11.501 17.309 12.942 17.681 13.231C18.297 13.71 18.831 14.189 19.225 14.614C19.753 15.184 19.999 15.625 19.999 16.001C19.999 16.757 19.288 17.8 18.68 18.464C18.256 18.926 17.147 20.001 15.999 20.001L16 20ZM3.994 1C3.726 1.005 3.005 1.333 2.221 2.055C1.477 2.741 1.014 3.486 1.014 4C1.014 10.729 9.278 19 16 19C16.513 19 17.258 18.535 17.944 17.787C18.667 16.999 18.995 16.275 19 16.006C18.968 15.816 18.442 15.077 17.003 13.969C15.766 13.017 14.763 12.506 14.505 12.5C14.487 12.505 14.375 12.548 14.148 12.836C13.951 13.087 13.74 13.43 13.535 13.762C12.975 14.673 12.446 15.534 11.677 15.534C11.553 15.534 11.431 15.51 11.314 15.463C8.689 14.413 5.585 11.309 4.535 8.684C4.409 8.369 4.389 7.875 5.009 7.313C5.339 7.014 5.795 6.734 6.237 6.462C6.569 6.258 6.913 6.047 7.163 5.849C7.451 5.622 7.494 5.51 7.499 5.492C7.492 5.234 6.982 4.231 6.03 2.994C4.922 1.555 4.183 1.03 3.993 0.997L3.994 1Z"
                   fill="white" />
               </g>
               <defs>
-                <clipPath id="clip1">
+                <clipPath id="clip0">
                   <rect width="20" height="20" fill="white" />
                 </clipPath>
               </defs>
@@ -538,7 +577,7 @@
           <span class="footer__contact">
             <svg class="footer__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
               xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0)">
+              <g clip-path="url(#clip1)">
                 <path
                   d="M17.071 2.929C15.182 1.04 12.671 0 10 0C6.906 0 4.025 1.425 2.147 3.807V2.5C2.147 2.224 1.923 2 1.647 2C1.371 2 1.147 2.224 1.147 2.5V5.472C1.147 5.701 1.302 5.9 1.524 5.957C1.621 5.982 1.719 5.976 1.808 5.946L4.661 4.974C4.922 4.885 5.062 4.601 4.973 4.34C4.884 4.079 4.6 3.939 4.339 4.028L2.849 4.536C4.537 2.328 7.169 1.002 10.001 1.002C14.964 1.002 19.001 5.039 19.001 10.002C19.001 14.965 14.964 19.002 10.001 19.002C6.685 19.002 3.647 17.187 2.073 14.265C1.942 14.022 1.639 13.931 1.396 14.062C1.153 14.193 1.062 14.496 1.193 14.739C2.942 17.985 6.318 20.002 10.002 20.002C12.673 20.002 15.184 18.962 17.073 17.073C18.962 15.184 20.002 12.673 20.002 10.002C20.002 7.331 18.962 4.82 17.073 2.931L17.071 2.929Z"
                   fill="white" />
@@ -547,20 +586,24 @@
                   fill="white" />
               </g>
               <defs>
-                <clipPath id="clip0">
+                <clipPath id="clip1">
                   <rect width="20" height="20" fill="white" />
                 </clipPath>
               </defs>
             </svg>
             c 9:00 - 18:00
           </span>
-          <div class="footer__networks">
-            <a class="footer__net-icon footer__net-icon--fb icon-facebook"
-              href="https://www.facebook.com/tatyana.pilke/" target="_blank"></a>
-            <a class="footer__net-icon footer__net-icon--in" href="https://www.linkedin.com/feed/" target="_blank"></a>
-            <a class="footer__net-icon footer__net-icon--git" href="https://github.com/TatyanaPilke" target="_blank">
-            </a>
-          </div>
+          <ul class="footer__networks d-flex">
+            <li class="footer__net">
+              <a class="footer__net-icon footer__net-icon--fb icon-facebook" href="https://www.facebook.com/tatyana.pilke/" target="_blank"></a>
+            </li>
+            <li class="footer__net">
+              <a class="footer__net-icon footer__net-icon--in" href="https://www.linkedin.com/feed/" target="_blank"></a>
+            </li>
+            <li class="footer__net">
+              <a class="footer__net-icon footer__net-icon--git" href="https://github.com/TatyanaPilke" target="_blank"></a>
+            </li>
+          </ul>
         </address>
       </div>
       <form class="footer-form" action="#" method="post" id="order">
@@ -577,7 +620,7 @@
           <input class="footer-form__input" type="tel" placeholder="Телефон *" required>
         </label>
         <textarea class="footer-form__input footer-form__textarea" placeholder="Сообщение *" required></textarea>
-        <button class="footer-form__btn btn lang" key="send" name="submit" type="submit">Отправить</button>
+        <button class="footer-form__btn btn" name="submit" type="submit">Отправить</button>
       </form>
     </div>
   </div>
@@ -602,6 +645,7 @@
 </footer>
 </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
 </body>

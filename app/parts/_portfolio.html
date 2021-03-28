@@ -143,7 +143,26 @@
           </div>
         </div>
       </div>
-      <a class="portfolio__btn btn" href="#order">Заказать верстку</a>
+      <a class="portfolio__btn btn" data-fancybox data-src="#modal" href="javascript:;">Заказать верстку</a>
     </div>
+  </div>
+
+  <div id="modal" style="display: none;">
+    <form class="footer-form" action="#" method="post" id="order">
+      <div class="footer-form__title header__title-form">
+        Напишите мне
+      </div>
+      <label class="footer-form__label">
+        <input class="footer-form__input" type="text" placeholder="Ваше имя *" required>
+      </label>
+      <label class="footer-form__label">
+        <input class="footer-form__input" type="email" placeholder="Email *" required>
+      </label>
+      <label class="footer-form__label">
+        <input class="footer-form__input" type="tel" placeholder="Телефон *" required>
+      </label>
+      <textarea class="footer-form__input footer-form__textarea" placeholder="Сообщение *" required></textarea>
+      <button class="footer-form__btn btn" name="submit" type="submit">Отправить</button>
+    </form>
   </div>
 </section>

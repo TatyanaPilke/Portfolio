@@ -90,6 +90,16 @@
   &__networks {
     position: relative;
     z-index: 5;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__net {
+    display: block;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &__net-icon {
@@ -99,16 +109,34 @@
     padding: 0;
     border-radius: 50%;
     position: relative;
-    margin-right: 10px;
     font-style: normal;
     @include transition;
+    background-color: rgba(32, 27, 32, 0.7);
 
     &:hover {
       box-shadow: 0 0 7px 2px #a5a5a7;
+      animation: bounce 1s;
     }
 
-    &:last-child {
-      margin-right: 0;
+    @keyframes bounce {
+      0%, 20%, 53%, 80%, 100% {
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transform: translate3d(0,0,0);
+      }
+    
+      40% {
+        transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transform: translate3d(0, -6px, 0);
+      }
+    
+      70% {
+        transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transform: translate3d(0, -4px, 0);
+      }
+    
+      90% {
+        transform: translate3d(0,-2px,0);
+      }
     }
 
     &:before {
@@ -123,29 +151,41 @@
     }
 
     &--fb {
-      background-color: #395799;
+
       &:before {
         content: "\f09a";
+      }
+
+      &:hover {
+        background-color: #3b5998;
       }
     }
 
     &--git {
-      background-color: $white;
+
       &:before {
         content: "\f09b";
-        color: #000;
-        font-size: 30px;
+        font-size: 20px;
+      }
+
+      &:hover {
+        background-color:  #2a5a8a;
       }
     }
 
     &--in {
-      background-color: #0da6be;
+
       &:before {
         content: "\f0e1";
+        font-size: 15px;
+      }
+
+      &:hover {
+        background-color: #4183c4;
       }
     }
   }
- 
+
   .footer-form {
     position: absolute;
     top: -35px;
@@ -218,13 +258,13 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color:rgba(31, 28, 28, 0.67)
+    background-color: rgba(31, 28, 28, 0.67)
   }
 
   &__copyright {
     font-size: 13px;
     font-weight: 400;
-    color:rgba(255, 255, 255, 0.2)
+    color: rgba(255, 255, 255, 0.2)
   }
 
   // START FOOTER ANIMATION BACKGROUND 
@@ -344,5 +384,6 @@
       border-radius: 50%;
     }
   }
-// END FOOTER ANIMATION BACKGROUND 
 }
+
+// END FOOTER ANIMATION BACKGROUND 
