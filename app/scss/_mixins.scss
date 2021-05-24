@@ -13,13 +13,8 @@
 @mixin text-hidden {
   text-overflow: ellipsis;
   overflow: hidden;
-<<<<<<< HEAD
   display: box;
   box-orient: vertical;
-=======
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
->>>>>>> 20fffa9cfc2dc29c33cbddb2a30d13993e165c40
 }
 
 @mixin transition {

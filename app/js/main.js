@@ -82,9 +82,3 @@ $(function () {
 
 });
 // end ACCORDION 
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 20fffa9cfc2dc29c33cbddb2a30d13993e165c40

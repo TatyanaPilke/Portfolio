@@ -63,7 +63,7 @@
     margin-right: 10%;
     position: relative;
 
-    @include r($desctop) {
+    @include r($desktop) {
       display: flex;
       flex-direction: column-reverse;
     }

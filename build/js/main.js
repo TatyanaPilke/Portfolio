@@ -46,7 +46,7 @@ var swiper = new Swiper('.reviews__container', {
 });
 //  end SWIPER reviews
 
-// Anchor links in header
+// start Anchor links in header
 $(document).ready(function () {
   $("#header-menu").on("click", "a", function (event) {
     event.preventDefault();
@@ -57,7 +57,7 @@ $(document).ready(function () {
     }, 1500);
   });
 });
-// 
+// end Anchor links in header
 
 // start ACCORDION(FAQ) 
 
@@ -82,9 +82,3 @@ $(function () {
 
 });
 // end ACCORDION 
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 20fffa9cfc2dc29c33cbddb2a30d13993e165c40

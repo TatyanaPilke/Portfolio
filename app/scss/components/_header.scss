@@ -4,7 +4,7 @@
   background-position: center;
   width: 100%;
   position: relative;
-  // height: 100vh;
+  height: 100vh;
 
   &:after {
     content: "";
@@ -41,7 +41,11 @@
   }
 
   &__inner {
-    padding: 200px 0 220px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
     text-align: center;
   }
 
@@ -113,7 +117,7 @@
     text-align: center;
     z-index: 3;
     position: relative;
-    margin: 0 auto 120px;
+    margin: 0 auto 80px;
     padding: 50px 70px 70px;
     text-transform: uppercase;
     cursor: pointer;
@@ -260,7 +264,7 @@
   // Стрелочки вниз анимация 
   .arrow-down {
     position: absolute;
-    bottom: 120px;
+    bottom: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -299,55 +303,7 @@
       transform: rotate(45deg) translate(20px, 20px);
     }
   }
-
-<<<<<<< HEAD
-  .button {
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    position: fixed;
-    bottom: 20px;
-    right: 40px;
-    transition: background-color .3s,
-      opacity .5s, visibility .5s;
-    opacity: 0.4;
-    // visibility: hidden;
-    z-index: 1000;
-
-    &:before {
-      content: "\f077";
-      position: absolute;
-      display: block;
-      font-family: 'icomoon';
-      font-size: 20px;
-      color: $line;
-      z-index: 1000;
-      top: 45%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      @include transform;
-    }
-
-    &:hover {
-      cursor: pointer;
-      background-color: #d497fc;
-    }
-
-    &:active {
-      background-color: #b062e4;
-    }
-
-    .button .show {
-      opacity: 1;
-      visibility: visible;
-    }
-  }
-
-=======
->>>>>>> 20fffa9cfc2dc29c33cbddb2a30d13993e165c40
+  
   &__title-form {
     margin-top: 50px;
   }
