@@ -43,6 +43,10 @@
       }
     }
 
+    &:focus {
+      border-bottom: 1px solid $text-form;
+    }
+
     &:hover {
       border-bottom: 1px solid $text-form;
     }

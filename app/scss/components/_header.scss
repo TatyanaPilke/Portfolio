@@ -23,9 +23,9 @@
       content: " ";
       width: 700px;
       height: 700px;
-      top: 150px;
-      right: -350px;
-      border-radius: 20px;
+      top: 170px;
+      right: -400px;
+      border-radius: 5px;
       background-color: $line;
       opacity: 0.12;
       display: block;
@@ -35,12 +35,12 @@
     }
 
     &:before {
-      left: -350px;
+      left: -400px;
     }
   }
 
   &__inner {
-    padding: 250px 0;
+    padding: 200px 0 220px;
     text-align: center;
   }
 
@@ -50,7 +50,7 @@
   }
 
   &__title {
-    font-size: 48px;
+    font-size: calc(36px + 12 * ((100vw - 320px) / (1920 - 320)));
     font-weight: 500;
     letter-spacing: 0.09em;
     animation: title 3s;
@@ -103,24 +103,8 @@
     position: relative;
     display: inline-block;
     padding: 10px 0 10px 10px;
-
-    &:after,
-    &:before {
-      content: "";
-      position: absolute;
-      right: 0;
-      width: 220px;
-      height: 2px;
-      background-color: $white;
-    }
-
-    &:after {
-      bottom: 0;
-    }
-
-    &:before {
-      top: 0;
-    }
+    border-top: 2px solid $white;
+    border-bottom: 2px solid $white;
   }
 
   &__title-text {
@@ -131,9 +115,6 @@
     margin: 0 auto 120px;
     padding: 50px 70px 70px;
     text-transform: uppercase;
-    background-color: transparent;
-    border-style: none;
-    outline: transparent;
     cursor: pointer;
     overflow: hidden;
     transition: all .5s;
@@ -320,11 +301,11 @@
 
   .button {
     display: inline-block;
-    background-color: #c8c1ce;
-    width: 50px;
-    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     text-align: center;
-    border-radius: 4px;
     position: fixed;
     bottom: 20px;
     right: 40px;
@@ -337,12 +318,14 @@
     &:before {
       content: "\f077";
       position: absolute;
-      display: inline-block;
+      display: block;
       font-family: 'icomoon';
-      font-size: 25px;
-      color: #fff;
+      font-size: 20px;
+      color: $line;
       z-index: 1000;
-      top: 50%;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       @include transform;
     }
 

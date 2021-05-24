@@ -17,6 +17,10 @@
   position: relative;
   cursor: pointer;
 
+  &:focus {
+    box-shadow: 0px 0px 5px 1px #d0c1f1;
+  }
+
   &:hover {
     background-color: #e5bcec;
   }
@@ -42,7 +46,7 @@
 .active {
 
   &:hover {
-    background-color: #c4a7c9;
+    background-color: #f1c9f8;
   }
 }
 
