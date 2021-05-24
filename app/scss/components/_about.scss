@@ -62,6 +62,11 @@
     margin-left: 10%;
     margin-right: 10%;
     position: relative;
+
+    @include r($desctop) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
 
   &__img {

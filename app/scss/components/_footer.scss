@@ -384,6 +384,49 @@
       border-radius: 50%;
     }
   }
+
+  
+  .back-top {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: background-color .3s,
+      opacity .5s, visibility .5s;
+    // visibility: hidden;
+    z-index: 1000;
+
+    &:before {
+      content: "\f077";
+      position: absolute;
+      display: block;
+      font-family: 'icomoon';
+      font-size: 12px;
+      color: $line;
+      z-index: 100;
+      top: 50%;
+      @include transform;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: #d497fc;
+    }
+
+    &:active {
+      background-color: #b062e4;
+    }
+  }
+
+  .back-top .show {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 // END FOOTER ANIMATION BACKGROUND 

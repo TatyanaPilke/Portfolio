@@ -1,5 +1,5 @@
 // start back to top 
-let btn = $('.button');
+let btn = $('.back-top');
 
 $(window).scroll(function () {
   if ($(window).scrollTop() > 300) {
@@ -83,3 +83,8 @@ $(function () {
 });
 // end ACCORDION 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 20fffa9cfc2dc29c33cbddb2a30d13993e165c40
