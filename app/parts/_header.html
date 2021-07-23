@@ -1,6 +1,6 @@
 <!--START section HEADER  -->
 
-<header class="header" style="background-image: url(images/bb.jpg)">
+<header class="header lock-padding" style="background-image: url(images/bb.jpg)">
   <div class="header__wrapper">
     <div class="header__top d-flex f-jcsb f-aic">
       <a class="logo" href="#">
@@ -39,7 +39,7 @@
       </h1>
       <span class="header__title-md">html - верстальщик</span>
     </div>
-    <a class="header__btn btn" data-fancybox data-src="#modal" href="javascript:;">Заказать верстку</a>
+    <a href="#popup" class="header__btn btn popup-link">Заказать верстку</a>
   </div>
   <span class="decor-line decor-line--line1"></span>
   <span class="decor-line decor-line--line2"></span>
@@ -55,24 +55,31 @@
     <span></span>
   </div>
 
-  <div id="modal" style="display: none;">
-    <form class="footer-form" action="#" method="post" id="order">
-      <div class="footer-form__title header__title-form">
-        Напишите мне
+  <div id="popup" class="popup">
+    <div class="popup__body">
+      <div class="popup__content">
+        <a href="#header" class="popup__close close-popup">X</a>
+        <form class="footer-form header__form" action="#" method="post" id="order">
+          <div class="footer-form__title header__title-form">
+            Напишите мне
+          </div>
+          <label class="footer-form__label">
+            <input class="footer-form__input" type="text" placeholder="Ваше имя *" required>
+          </label>
+          <label class="footer-form__label">
+            <input class="footer-form__input" type="email" placeholder="Email *" required>
+          </label>
+          <label class="footer-form__label">
+            <input class="footer-form__input" type="tel" placeholder="Телефон *" required>
+          </label>
+          <textarea class="footer-form__input footer-form__textarea" placeholder="Сообщение *" required></textarea>
+          <button class="footer-form__btn btn" name="submit" type="submit">Отправить</button>
+        </form>
+
       </div>
-      <label class="footer-form__label">
-        <input class="footer-form__input" type="text" placeholder="Ваше имя *" required>
-      </label>
-      <label class="footer-form__label">
-        <input class="footer-form__input" type="email" placeholder="Email *" required>
-      </label>
-      <label class="footer-form__label">
-        <input class="footer-form__input" type="tel" placeholder="Телефон *" required>
-      </label>
-      <textarea class="footer-form__input footer-form__textarea" placeholder="Сообщение *" required></textarea>
-      <button class="footer-form__btn btn" name="submit" type="submit">Отправить</button>
-    </form>
+    </div>
   </div>
 </header>
+
 
 <!--END section HEADER  -->
