@@ -64,16 +64,14 @@ $(document).ready(function () {
 $(function () {
 
   $.fn.accordion = function () {
-    const trigger = $(this).find('.accordion-trigger');
-    const collapse = $(this).find('.accordion-collapse');
+    const trigger = $(this).find('.accordion__trigger');
+    const collapse = $(this).find('.accordion__collapse');
 
     $(trigger).each(function () {
       $(this).on('click', function () {
-        $(this).siblings('.accordion-collapse').slideToggle();
-        $(this).toggleClass('accordion-open');
+        $(this).siblings('.accordion__collapse').slideToggle();
         $(this).toggleClass('active');
-        $(this).parent().siblings('.accordion-item').find('.accordion-trigger').removeClass('accordion-open');
-        $(this).parent().siblings('.accordion-item').find('.accordion-collapse').slideUp();
+        $(this).parent().siblings('.accordion__item').find('.accordion__collapse').slideUp();
       });
     });
   };

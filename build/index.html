@@ -1,111 +1,114 @@
-
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Tatyana Pilke</title>
+  <title>Портфолио Татьяны Пильке</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="icon" href="images/icon/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
   <div class="page">
 <!--START section HEADER  -->
 
 <header class="header lock-padding" style="background-image: url(images/bb.jpg)">
   <div class="header__wrapper">
-    <div class="header__top d-flex f-jcsb f-aic">
-      <a class="logo" href="#">
-        <img class="logo__img" src="images/logo.svg" alt="Logo" width="180" height="62">
-      </a>
-      <nav class="menu" id="header-menu">
-        <ul class="menu__item">
-          <li class="menu__list">
+    <div class="header__inner">
+      <nav class="menu d-flex f-jcsb f-aic" id="header-menu">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.svg" alt="Logo" width="180" height="62">
+        </a>
+        <ul class="menu__list">
+          <li class="menu__item">
             <a class="menu__link" href="#about">Обо мне</a>
           </li>
-          <li class="menu__list">
+          <li class="menu__item">
             <a class="menu__link" href="#skills">Навыки</a>
           </li>
-          <li class="menu__list">
+          <li class="menu__item">
             <a class="menu__link" href="#portfolio">Портфолио</a>
           </li>
-          <li class="menu__list">
+          <li class="menu__item">
             <a class="menu__link" href="#reviews">Отзывы</a>
           </li>
-          <li class="menu__list">
+          <li class="menu__item">
             <a class="menu__link" href="#contact">Контакты</a>
           </li>
         </ul>
       </nav>
+      <div class="header__content">
+        <div class="header__box">
+          <h1 class="header__title">
+            <span class="header__name header__name--first">Татьяна </span>
+            <span class="header__name header__name--last">Пильке</span>
+            <span class="header__span">html - верстальщик</span>
+          </h1>
+          <span class="header__line header__line--top"></span>
+          <span class="header__line header__line--right"></span>
+          <span class="header__line header__line--bottom"></span>
+          <span class="header__line header__line--left"></span>
+        </div>
+        <a href="#popup" class="header__btn btn popup-link">Заказать верстку</a>
+      </div>
+      <a class="header__arrow">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
     </div>
-  </div>
-  <div class="header__inner">
-    <div class="header__title-text">
-      <span class="header__line header__line--top"></span>
-      <span class="header__line header__line--right"></span>
-      <span class="header__line header__line--bottom"></span>
-      <span class="header__line header__line--left"></span>
-      <h1 class="header__title">
-        <span class="header__title-bg">Татьяна </span>
-        <span class="header__title-bg2">Пильке</span>
-      </h1>
-      <span class="header__title-md">html - верстальщик</span>
-    </div>
-    <a href="#popup" class="header__btn btn popup-link">Заказать верстку</a>
-  </div>
-  <span class="decor-line decor-line--line1"></span>
-  <span class="decor-line decor-line--line2"></span>
-  <span class="decor-line decor-line--line3"></span>
-  <span class="decor-line decor-line--line4"></span>
-  <span class="decor-line decor-line--line5"></span>
-  <span class="decor-line decor-line--line6"></span>
-  <span class="decor-line decor-line--line7"></span>
-  <span class="decor-line decor-line--line8"></span>
-  <div class="arrow-down">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+    <span class="decor-line decor-line--line1"></span>
+    <span class="decor-line decor-line--line2"></span>
+    <span class="decor-line decor-line--line3"></span>
+    <span class="decor-line decor-line--line4"></span>
+    <span class="decor-line decor-line--line5"></span>
+    <span class="decor-line decor-line--line6"></span>
+    <span class="decor-line decor-line--line7"></span>
+    <span class="decor-line decor-line--line8"></span>
 
-  <div id="popup" class="popup">
-    <div class="popup__body">
-      <div class="popup__content">
-        <a href="#header" class="popup__close close-popup">X</a>
-        <form class="footer-form header__form" action="#" method="post" id="order">
-          <div class="footer-form__title header__title-form">
-            Напишите мне
-          </div>
-          <label class="footer-form__label">
-            <input class="footer-form__input" type="text" placeholder="Ваше имя *" required>
-          </label>
-          <label class="footer-form__label">
-            <input class="footer-form__input" type="email" placeholder="Email *" required>
-          </label>
-          <label class="footer-form__label">
-            <input class="footer-form__input" type="tel" placeholder="Телефон *" required>
-          </label>
-          <textarea class="footer-form__input footer-form__textarea" placeholder="Сообщение *" required></textarea>
-          <button class="footer-form__btn btn" name="submit" type="submit">Отправить</button>
-        </form>
-
+    <div id="popup" class="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <a href="#header" class="popup__close close-popup">X</a>
+          <form class="footer-form header__form" action="#" method="post" id="order">
+            <div class="footer-form__title header__title-form">
+              Напишите мне
+            </div>
+            <label class="footer-form__label">
+              <input class="footer-form__input" type="text" placeholder="Ваше имя *" required>
+            </label>
+            <label class="footer-form__label">
+              <input class="footer-form__input" type="email" placeholder="Email *" required>
+            </label>
+            <label class="footer-form__label">
+              <input class="footer-form__input" type="tel" placeholder="Телефон *" required>
+            </label>
+            <textarea class="footer-form__input footer-form__textarea" placeholder="Сообщение *" required></textarea>
+            <button class="footer-form__btn btn" name="submit" type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
 </header>
 
 
 <!--END section HEADER  -->
-<!--START section ABOUT  -->
+<main>
+  <!--START section ABOUT  -->
 
 <section class="about" style="background-image: url(images/bg-about.png);" id="about">
   <h2 class="about__title title">Обо мне</h2>
   <div class="about__content d-flex f-jcsb f-aic">
-    <p class="about__text" data-simplebar>Здравствуйте! Меня зовут Татьяна! Я рада приветствовать вас на моём сайте.
-      Если вы здесь -
-      значит, скорее всего, знаете что такое вёрстка и ищите опытного верстальщика для своего проекта. Если же нет, и
+    <p class="about__text" data-simplebar>
+      Здравствуйте! Меня зовут Татьяна! Я рада приветствовать вас на моём сайте.
+      Если вы здесь - значит, скорее всего, знаете что такое вёрстка и ищите опытного верстальщика для своего проекта. Если же нет, и
       слово верстальщик вам ничего не говорит, открою вам секрет. Только тсссссс! Верстальщик - это маг, который
       использует семантическую белую магию (HTML), умеет варить стильное зелье (CSS) и владеет динамическим языком
       заклинаний (JavaScript). Все эти умения и знания верстальщик применяет в магическом процессе превращения макета
@@ -134,7 +137,7 @@
 </section>
 
 <!--END section ABOUT  -->
-<!-- START section SKILLS  -->
+  <!-- START section SKILLS  -->
 
 <section class="skills" id="skills">
   <h2 class="skills__title title">
@@ -149,8 +152,7 @@
         </div>
         <div class="swiper-slide">
           <div class="skills__triangle skills__triangle--turn">
-            <span class="skills__icon skills__icon--turn"
-              style="background-image: url(images/icon/css.png);"></span>
+            <span class="skills__icon skills__icon--turn" style="background-image: url(images/icon/css.png);"></span>
           </div>
         </div>
         <div class="swiper-slide">
@@ -160,8 +162,7 @@
         </div>
         <div class="swiper-slide">
           <div class="skills__triangle skills__triangle--turn">
-            <span class="skills__icon skills__icon--js skills__icon--turn"
-              style="background-image: url(images/icon/js.png);"></span>
+            <span class="skills__icon skills__icon--js skills__icon--turn" style="background-image: url(images/icon/js.png);"></span>
           </div>
         </div>
         <div class="swiper-slide">
@@ -171,20 +172,17 @@
         </div>
         <div class="swiper-slide">
           <div class="skills__triangle skills__triangle--turn">
-            <span class="skills__icon skills__icon--width skills__icon--turn"
-              style="background-image: url(images/icon/sass.png);"></span>
+            <span class="skills__icon skills__icon--width skills__icon--turn" style="background-image: url(images/icon/sass.png);"></span>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="skills__triangle">
-            <span class="skills__icon skills__icon--width"
-              style="background-image: url(images/icon/adobe.png);"></span>
+            <span class="skills__icon skills__icon--width" style="background-image: url(images/icon/adobe.png);"></span>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="skills__triangle skills__triangle--turn">
-            <span class="skills__icon skills__icon--turn"
-              style="background-image: url(images/icon/figma.png);"></span>
+            <span class="skills__icon skills__icon--turn" style="background-image: url(images/icon/figma.png);"></span>
           </div>
         </div>
         <div class="swiper-slide">
@@ -194,8 +192,7 @@
         </div>
         <div class="swiper-slide">
           <div class="skills__triangle skills__triangle--turn">
-            <span class="skills__icon skills__icon--npm skills__icon--turn"
-              style="background-image: url(images/icon/npm.png);"></span>
+            <span class="skills__icon skills__icon--npm skills__icon--turn" style="background-image: url(images/icon/npm.png);"></span>
           </div>
         </div>
         <div class="swiper-slide">
@@ -205,8 +202,7 @@
         </div>
         <div class="swiper-slide">
           <div class="skills__triangle skills__triangle--turn">
-            <span class="skills__icon skills__icon--turn"
-              style="background-image: url(images/icon/vs.png);"></span>
+            <span class="skills__icon skills__icon--turn" style="background-image: url(images/icon/vs.png);"></span>
           </div>
         </div>
         <div class="swiper-slide">
@@ -216,8 +212,7 @@
         </div>
         <div class="swiper-slide">
           <div class="skills__triangle skills__triangle--turn">
-            <span class="skills__icon skills__icon--width-md skills__icon--turn"
-              style="background-image: url(images/icon/github.png);"></span>
+            <span class="skills__icon skills__icon--width-md skills__icon--turn" style="background-image: url(images/icon/github.png);"></span>
           </div>
         </div>
       </div>
@@ -229,7 +224,7 @@
 </section>
 
 <!-- END section SKILLS  -->
-<section class="portfolio" id="portfolio">
+  <section class="portfolio" id="portfolio">
   <span class="decor-line portfolio__line portfolio__line--1"></span>
   <span class="decor-line portfolio__line portfolio__line--2"></span>
   <span class="decor-line portfolio__line portfolio__line--3"></span>
@@ -243,15 +238,14 @@
           <img class="portfolio__img" src="images/bg1.jpg" alt="Website">
           <div class="portfolio__hover">
             <p class="portfolio__text-hover">Ля-ля-ля</p>
-            <a class="portfolio__link-hover btn" href="https://tatyanapilke.github.io/Awards/build/#"
-              target="blank">Смотреть проект ...</a>
+            <a class="portfolio__link-hover btn" href="https://tatyanapilke.github.io/Awards/build/#" target="blank">Смотреть проект ...</a>
           </div>
         </div>
         <div class="portfolio__works">
           <img class="portfolio__img" src="images/bg2.jpg" alt="Website">
           <div class="portfolio__hover">
             <p class="portfolio__text-hover">Ля-ля-ля</p>
-            <a class="portfolio__link-hover btn" href="#">Смотреть проект ...</a>
+            <a class="portfolio__link-hover btn" href="#" target="blank">Смотреть проект ...</a>
           </div>
         </div>
       </div>
@@ -260,127 +254,124 @@
           <img class="portfolio__img" src="images/bg3.jpg" alt="Website">
           <div class="portfolio__hover">
             <p class="portfolio__text-hover">Ля-ля-ля</p>
-            <a class="portfolio__link-hover btn" href="https://tatyanapilke.github.io/Portfolio/build/"
-              target="blank">Смотреть проект ...</a>
+            <a class="portfolio__link-hover btn" href="https://tatyanapilke.github.io/Portfolio/build/" target="blank">Смотреть проект ...</a>
           </div>
         </div>
         <div class="portfolio__works">
           <img class="portfolio__img" src="images/bg4.jpg" alt="Website">
           <div class="portfolio__hover">
             <p class="portfolio__text-hover">Ля-ля-ля</p>
-            <a class="portfolio__link-hover btn" href="#">Смотреть проект ...</a>
+            <a class="portfolio__link-hover btn" href="#" target="blank">Смотреть проект ...</a>
           </div>
         </div>
         <div class="portfolio__works portfolio__works--5">
           <img class="portfolio__img" src="images/bg5.jpg" alt="Website">
           <div class="portfolio__hover">
             <p class="portfolio__text-hover">Ля-ля-ля</p>
-            <a class="portfolio__link-hover btn" href="https://tatyanapilke.github.io/Yacht/build/"
-              target="blank">Смотреть проект ...</a>
+            <a class="portfolio__link-hover btn" href="https://tatyanapilke.github.io/Yacht/build/" target="blank">Смотреть проект ...</a>
           </div>
         </div>
       </div>
       <div class="portfolio__box d-flex f-jce">
         <div class="portfolio__works">
-          <img class="portfolio__img" src="images/" alt="Website">
+          <img class="portfolio__img" src="images/bg3.jpg" alt="Website">
           <div class="portfolio__hover">
             <p class="portfolio__text-hover">Ля-ля-ля</p>
-            <a class="portfolio__link-hover btn" href="#">Смотреть проект ...</a>
+            <a class="portfolio__link-hover btn" href="#" target="blank">Смотреть проект ...</a>
           </div>
         </div>
         <div class="portfolio__works portfolio__works--7">
-          <img class="portfolio__img" src="images/" alt="Website">
+          <img class="portfolio__img" src="images/bg3.jpg" alt="Website">
           <div class="portfolio__hover">
             <p class="portfolio__text-hover">Ля-ля-ля</p>
-            <a class="portfolio__link-hover btn" href="#">Смотреть проект ...</a>
+            <a class="portfolio__link-hover btn" href="#" target="blank">Смотреть проект ...</a>
           </div>
         </div>
       </div>
       <div class="portfolio__box d-flex f-jcc">
         <div class="portfolio__works portfolio__works--8">
-          <img class="portfolio__img" src="images/" alt="Website">
+          <img class="portfolio__img" src="images/bg3.jpg" alt="Website">
           <div class="portfolio__hover">
             <p class="portfolio__text-hover">Ля-ля-ля</p>
-            <a class="portfolio__link-hover btn" href="#">Смотреть проект ...</a>
+            <a class="portfolio__link-hover btn" href="#" target="blank">Смотреть проект ...</a>
           </div>
         </div>
       </div>
 
       <div class="accordion">
-        <div class="portfolio__ask">
+        <h3 class="accordion__ask">
           Ответы на часто задаваемые вопросы
-        </div>
-        <div class="accordion-item">
-          <div class="accordion-trigger">Как заказать вёрстку?</div>
-          <div class="accordion-collapse">
+        </h3>
+        <div class="accordion__item">
+          <div class="accordion__trigger">Как заказать вёрстку?</div>
+          <p class="accordion__collapse">
             Свяжитесь со мной любым удобным для вас способом (вы можете позвонить, написать в соц.сетях(FB), в telegram
             или
             заполнить форму на сайте).
-          </div>
+          </p>
         </div>
-        <div class="accordion-item">
-          <div class="accordion-trigger">Как проходит сделка?
-          </div>
-          <div class="accordion-collapse">
-            <ol class="accordion-item2">
-              <li class="accordion-text">
+        <div class="accordion__item">
+          <h4 class="accordion__trigger">Как проходит сделка?</h4>
+          <div class="accordion__collapse">
+            <ol class="accordion__item2">
+              <li class="accordion__text">
                 Получения от заказчика макета, шрифтов, технического задания(ТЗ).
               </li>
-              <li class="accordion-text">
+              <li class="accordion__text">
                 Оценка проекта(анализ всех материалов, формирование сроков и стоимости вёрстки).
               </li>
-              <li class="accordion-text">
+              <li class="accordion__text">
                 Согласование всех нюансов и пожеланий заказчика для реализации задания.
               </li>
-              <li class="accordion-text">
+              <li class="accordion__text">
                 Заказчик оплачивает не менее 50% от всей стоимости проекта.
               </li>
-              <li class="accordion-text">
+              <li class="accordion__text">
                 Вёрстка блоков и демонстрация промежуточного результата заказчику(на хостинге или Github Pages).
               </li>
-              <li class="accordion-text">
+              <li class="accordion__text">
                 Тестирование проекта.
               </li>
-              <li class="accordion-text">
+              <li class="accordion__text">
                 После полной оплаты вы получаете архив с
                 файлами готовой вёрстки.
               </li>
-              <li class="accordion-text">
+              <li class="accordion__text">
                 Передача готовой работы заказчику.
               </li>
             </ol>
-            <p class="accordion-text">
+            <p class="accordion__text">
               P.S. Все неточности по ТЗ и макету исправляю в срочном порядке бесплатно. Если заказчик желает дополнить
               вёрстку элементами, которых нет в ТЗ - такие правки оплачиваются дополнительно.
             </p>
           </div>
         </div>
-        <div class="accordion-item">
-          <div class="accordion-trigger">Нет технического задания(ТЗ). Что делать?</div>
-          <div class="accordion-collapse">
+        <div class="accordion__item">
+          <h4 class="accordion__trigger">Нет технического задания(ТЗ). Что делать?</h4>
+          <p class="accordion__collapse">
             Помогу составить подробное ТЗ по макету, так как, верстальщику намного проще работать с конкретными
             задачами,
             когда предусмотрены интерактив, hover-эффекты, анимации и прочее.
-          </div>
+          </p>
         </div>
-        <div class="accordion-item">
-          <div class="accordion-trigger">Сколько стоит вёрстка?</div>
-          <div class="accordion-collapse">
+        <div class="accordion__item">
+          <h4 class="accordion__trigger">Сколько стоит вёрстка?</h4>
+          <p class="accordion__collapse">
             Каждый проект рассчитывается индивидуально, поскольку всё зависит от сложности макета, количества страниц,
             наличия интерактива и прочих требований.
-          </div>
+          </p>
         </div>
-        <div class="accordion-item">
-          <div class="accordion-trigger">Способы оплаты?</div>
-          <div class="accordion-collapse">
+        <div class="accordion__item">
+          <h4 class="accordion__trigger">Способы оплаты?</h4>
+          <p class="accordion__collapse">
             Оплата на банковскую карту или кошельки платёжных систем WebMoney, Payoneer.
-          </div>
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="reviews" style="background-image: url(images/bg-reviews.jpg)" id="reviews">
+  <section class="reviews" style="background-image: url(images/bg-reviews.jpg)" id="reviews">
   <span class="decor-line reviews__line reviews__line--1"></span>
   <span class="decor-line reviews__line reviews__line--2"></span>
   <div class="container">
@@ -525,6 +516,7 @@
     </div>
   </div>
 </section>
+</main>
 <footer class="footer area" id="contact">
   <div class="container">
     <h2 class="footer__title title">
@@ -558,7 +550,7 @@
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M21.875 0.5H1.875C0.84125 0.5 0 1.34125 0 2.375V13.625C0 14.6587 0.84125 15.5 1.875 15.5H21.875C22.9088 15.5 23.75 14.6587 23.75 13.625V2.375C23.75 1.34125 22.9088 0.5 21.875 0.5ZM21.875 1.75C21.9125 1.75 21.9475 1.75375 21.9837 1.76L12.5688 8.03625C12.2063 8.2775 11.545 8.2775 11.1825 8.03625L1.7675 1.76C1.8025 1.75375 1.83875 1.75 1.87625 1.75H21.8762H21.875ZM21.875 14.25H1.875C1.53 14.25 1.25 13.97 1.25 13.625V2.9175L10.4887 9.07625C10.8775 9.335 11.3763 9.465 11.875 9.465C12.3737 9.465 12.8725 9.335 13.2613 9.07625L22.5 2.9175V13.625C22.5 13.97 22.22 14.25 21.875 14.25Z"
-                fill="white" /> </svg>
+                fill="white" /></svg>
             tatyana.pilke.web@gmail.com
           </a>
           <span class="footer__contact">
@@ -580,36 +572,44 @@
             </svg>
             c 9:00 - 18:00
           </span>
-          <ul class="footer__networks d-flex">
-            <li class="footer__net">
-              <a class="footer__net-icon footer__net-icon--fb icon-facebook"
-                href="https://www.facebook.com/tatyana.pilke/" target="_blank"></a>
-            </li>
-            <li class="footer__net">
-              <a class="footer__net-icon footer__net-icon--in" href="https://www.linkedin.com/feed/"
-                target="_blank"></a>
-            </li>
-            <li class="footer__net">
-              <a class="footer__net-icon footer__net-icon--git" href="https://github.com/TatyanaPilke"
-                target="_blank"></a>
-            </li>
-          </ul>
         </address>
+        <ul class="footer__networks d-flex">
+          <li class="footer__net">
+            <span class="sr-only">посмотреть профиль facebook</span>
+            <a class="footer__net-icon footer__net-icon--fb"
+              href="https://www.facebook.com/tatyana.pilke/" target="_blank"></a>
+          </li>
+          <li class="footer__net">
+            <span class="sr-only">посмотреть профиль linkedin</span>
+            <a class="footer__net-icon footer__net-icon--in" href="https://www.linkedin.com/feed/" target="_blank"></a>
+          </li>
+          <li class="footer__net">
+            <span class="sr-only">посмотреть профиль Git</span>
+            <a class="footer__net-icon footer__net-icon--git" href="https://github.com/TatyanaPilke"
+              target="_blank"></a>
+          </li>
+        </ul>
       </div>
       <form class="footer-form" action="#" method="post" id="order">
         <div class="footer-form__title">
           Напишите мне
         </div>
         <label class="footer-form__label">
-          <input class="footer-form__input" type="text" placeholder="Ваше имя *" required>
+          <span class="sr-only">Ваше имя</span>
+          <input class="footer-form__input" type="text" name="form[fullname]" placeholder="Ваше имя *" required>
         </label>
         <label class="footer-form__label">
-          <input class="footer-form__input" type="email" placeholder="Email *" required>
+          <span class="sr-only">Ваш email</span>
+          <input class="footer-form__input" type="email" name="form[email]" placeholder="Email *" required>
         </label>
         <label class="footer-form__label">
-          <input class="footer-form__input" type="tel" placeholder="Телефон *" required>
+          <span class="sr-only">Ваш телефон</span>
+          <input class="footer-form__input" type="tel" name="form[tel]" placeholder="Телефон *" required>
         </label>
-        <textarea class="footer-form__input footer-form__textarea" placeholder="Сообщение *" required></textarea>
+        <label class="footer-form__label">
+          <span class="sr-only">Ваше сообщение</span>
+          <textarea class="footer-form__input footer-form__textarea" name="form[message]" placeholder="Сообщение" required></textarea>
+        </label>
         <button class="footer-form__btn btn" name="submit" type="submit">Отправить</button>
       </form>
     </div>

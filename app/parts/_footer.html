@@ -31,7 +31,7 @@
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M21.875 0.5H1.875C0.84125 0.5 0 1.34125 0 2.375V13.625C0 14.6587 0.84125 15.5 1.875 15.5H21.875C22.9088 15.5 23.75 14.6587 23.75 13.625V2.375C23.75 1.34125 22.9088 0.5 21.875 0.5ZM21.875 1.75C21.9125 1.75 21.9475 1.75375 21.9837 1.76L12.5688 8.03625C12.2063 8.2775 11.545 8.2775 11.1825 8.03625L1.7675 1.76C1.8025 1.75375 1.83875 1.75 1.87625 1.75H21.8762H21.875ZM21.875 14.25H1.875C1.53 14.25 1.25 13.97 1.25 13.625V2.9175L10.4887 9.07625C10.8775 9.335 11.3763 9.465 11.875 9.465C12.3737 9.465 12.8725 9.335 13.2613 9.07625L22.5 2.9175V13.625C22.5 13.97 22.22 14.25 21.875 14.25Z"
-                fill="white" /> </svg>
+                fill="white" /></svg>
             tatyana.pilke.web@gmail.com
           </a>
           <span class="footer__contact">
@@ -53,36 +53,44 @@
             </svg>
             c 9:00 - 18:00
           </span>
-          <ul class="footer__networks d-flex">
-            <li class="footer__net">
-              <a class="footer__net-icon footer__net-icon--fb icon-facebook"
-                href="https://www.facebook.com/tatyana.pilke/" target="_blank"></a>
-            </li>
-            <li class="footer__net">
-              <a class="footer__net-icon footer__net-icon--in" href="https://www.linkedin.com/feed/"
-                target="_blank"></a>
-            </li>
-            <li class="footer__net">
-              <a class="footer__net-icon footer__net-icon--git" href="https://github.com/TatyanaPilke"
-                target="_blank"></a>
-            </li>
-          </ul>
         </address>
+        <ul class="footer__networks d-flex">
+          <li class="footer__net">
+            <span class="sr-only">посмотреть профиль facebook</span>
+            <a class="footer__net-icon footer__net-icon--fb"
+              href="https://www.facebook.com/tatyana.pilke/" target="_blank"></a>
+          </li>
+          <li class="footer__net">
+            <span class="sr-only">посмотреть профиль linkedin</span>
+            <a class="footer__net-icon footer__net-icon--in" href="https://www.linkedin.com/feed/" target="_blank"></a>
+          </li>
+          <li class="footer__net">
+            <span class="sr-only">посмотреть профиль Git</span>
+            <a class="footer__net-icon footer__net-icon--git" href="https://github.com/TatyanaPilke"
+              target="_blank"></a>
+          </li>
+        </ul>
       </div>
       <form class="footer-form" action="#" method="post" id="order">
         <div class="footer-form__title">
           Напишите мне
         </div>
         <label class="footer-form__label">
-          <input class="footer-form__input" type="text" placeholder="Ваше имя *" required>
+          <span class="sr-only">Ваше имя</span>
+          <input class="footer-form__input" type="text" name="form[fullname]" placeholder="Ваше имя *" required>
         </label>
         <label class="footer-form__label">
-          <input class="footer-form__input" type="email" placeholder="Email *" required>
+          <span class="sr-only">Ваш email</span>
+          <input class="footer-form__input" type="email" name="form[email]" placeholder="Email *" required>
         </label>
         <label class="footer-form__label">
-          <input class="footer-form__input" type="tel" placeholder="Телефон *" required>
+          <span class="sr-only">Ваш телефон</span>
+          <input class="footer-form__input" type="tel" name="form[tel]" placeholder="Телефон *" required>
         </label>
-        <textarea class="footer-form__input footer-form__textarea" placeholder="Сообщение *" required></textarea>
+        <label class="footer-form__label">
+          <span class="sr-only">Ваше сообщение</span>
+          <textarea class="footer-form__input footer-form__textarea" name="form[message]" placeholder="Сообщение" required></textarea>
+        </label>
         <button class="footer-form__btn btn" name="submit" type="submit">Отправить</button>
       </form>
     </div>

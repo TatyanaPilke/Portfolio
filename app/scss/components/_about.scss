@@ -11,12 +11,12 @@
     content: "";
     display: block;
     position: absolute;
-    bottom: -10px;
+    bottom: 0;
     right: 0;
     background-image: url(../images/photo-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 50%;
+    width: 70%;
     height: 140px;
   }
 
@@ -152,23 +152,11 @@
       background-color: $bg-skills;
     }
 
-    &--two {
-      width: 150px;
-      background-color: #E5E9F3;
-      left: 23%;
-    }
-
     &--three {
       width: 120px;
       background-color: #DA8EE7;
       bottom: 10px;
       right: 29.5%;
-    }
-
-    &--four {
-      width: 160px;
-      background-color: #E5E9F3;
-      right: 22.5%;
     }
 
     &--five {

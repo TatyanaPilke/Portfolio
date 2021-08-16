@@ -2,83 +2,81 @@
 
 <header class="header lock-padding" style="background-image: url(images/bb.jpg)">
   <div class="header__wrapper">
-    <div class="header__top d-flex f-jcsb f-aic">
-      <a class="logo" href="#">
-        <img class="logo__img" src="images/logo.svg" alt="Logo" width="180" height="62">
-      </a>
-      <nav class="menu" id="header-menu">
-        <ul class="menu__item">
-          <li class="menu__list">
+    <div class="header__inner">
+      <nav class="menu d-flex f-jcsb f-aic" id="header-menu">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.svg" alt="Logo" width="180" height="62">
+        </a>
+        <ul class="menu__list">
+          <li class="menu__item">
             <a class="menu__link" href="#about">Обо мне</a>
           </li>
-          <li class="menu__list">
+          <li class="menu__item">
             <a class="menu__link" href="#skills">Навыки</a>
           </li>
-          <li class="menu__list">
+          <li class="menu__item">
             <a class="menu__link" href="#portfolio">Портфолио</a>
           </li>
-          <li class="menu__list">
+          <li class="menu__item">
             <a class="menu__link" href="#reviews">Отзывы</a>
           </li>
-          <li class="menu__list">
+          <li class="menu__item">
             <a class="menu__link" href="#contact">Контакты</a>
           </li>
         </ul>
       </nav>
+      <div class="header__content">
+        <div class="header__box">
+          <h1 class="header__title">
+            <span class="header__name header__name--first">Татьяна </span>
+            <span class="header__name header__name--last">Пильке</span>
+            <span class="header__span">html - верстальщик</span>
+          </h1>
+          <span class="header__line header__line--top"></span>
+          <span class="header__line header__line--right"></span>
+          <span class="header__line header__line--bottom"></span>
+          <span class="header__line header__line--left"></span>
+        </div>
+        <a href="#popup" class="header__btn btn popup-link">Заказать верстку</a>
+      </div>
+      <a class="header__arrow">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
     </div>
-  </div>
-  <div class="header__inner">
-    <div class="header__title-text">
-      <span class="header__line header__line--top"></span>
-      <span class="header__line header__line--right"></span>
-      <span class="header__line header__line--bottom"></span>
-      <span class="header__line header__line--left"></span>
-      <h1 class="header__title">
-        <span class="header__title-bg">Татьяна </span>
-        <span class="header__title-bg2">Пильке</span>
-      </h1>
-      <span class="header__title-md">html - верстальщик</span>
-    </div>
-    <a href="#popup" class="header__btn btn popup-link">Заказать верстку</a>
-  </div>
-  <span class="decor-line decor-line--line1"></span>
-  <span class="decor-line decor-line--line2"></span>
-  <span class="decor-line decor-line--line3"></span>
-  <span class="decor-line decor-line--line4"></span>
-  <span class="decor-line decor-line--line5"></span>
-  <span class="decor-line decor-line--line6"></span>
-  <span class="decor-line decor-line--line7"></span>
-  <span class="decor-line decor-line--line8"></span>
-  <div class="arrow-down">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+    <span class="decor-line decor-line--line1"></span>
+    <span class="decor-line decor-line--line2"></span>
+    <span class="decor-line decor-line--line3"></span>
+    <span class="decor-line decor-line--line4"></span>
+    <span class="decor-line decor-line--line5"></span>
+    <span class="decor-line decor-line--line6"></span>
+    <span class="decor-line decor-line--line7"></span>
+    <span class="decor-line decor-line--line8"></span>
 
-  <div id="popup" class="popup">
-    <div class="popup__body">
-      <div class="popup__content">
-        <a href="#header" class="popup__close close-popup">X</a>
-        <form class="footer-form header__form" action="#" method="post" id="order">
-          <div class="footer-form__title header__title-form">
-            Напишите мне
-          </div>
-          <label class="footer-form__label">
-            <input class="footer-form__input" type="text" placeholder="Ваше имя *" required>
-          </label>
-          <label class="footer-form__label">
-            <input class="footer-form__input" type="email" placeholder="Email *" required>
-          </label>
-          <label class="footer-form__label">
-            <input class="footer-form__input" type="tel" placeholder="Телефон *" required>
-          </label>
-          <textarea class="footer-form__input footer-form__textarea" placeholder="Сообщение *" required></textarea>
-          <button class="footer-form__btn btn" name="submit" type="submit">Отправить</button>
-        </form>
-
+    <div id="popup" class="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <a href="#header" class="popup__close close-popup">X</a>
+          <form class="footer-form header__form" action="#" method="post" id="order">
+            <div class="footer-form__title header__title-form">
+              Напишите мне
+            </div>
+            <label class="footer-form__label">
+              <input class="footer-form__input" type="text" placeholder="Ваше имя *" required>
+            </label>
+            <label class="footer-form__label">
+              <input class="footer-form__input" type="email" placeholder="Email *" required>
+            </label>
+            <label class="footer-form__label">
+              <input class="footer-form__input" type="tel" placeholder="Телефон *" required>
+            </label>
+            <textarea class="footer-form__input footer-form__textarea" placeholder="Сообщение *" required></textarea>
+            <button class="footer-form__btn btn" name="submit" type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
 </header>
 
 

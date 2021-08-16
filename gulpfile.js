@@ -29,8 +29,7 @@ gulp.task('sass', function () {
 gulp.task('style', function () {
   return gulp.src([
       'node_modules/normalize.css/normalize.css',
-      'node_modules/swiper/swiper-bundle.css',
-      'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css'
+      'node_modules/swiper/swiper-bundle.css'
     ])
     .pipe(concat('libs.min.css'))
     .pipe(cssmin())
@@ -40,8 +39,7 @@ gulp.task('style', function () {
 
 gulp.task('script', function () {
   return gulp.src([
-      'node_modules/swiper/swiper-bundle.js',
-      'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js'
+      'node_modules/swiper/swiper-bundle.js'
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())

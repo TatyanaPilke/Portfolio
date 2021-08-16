@@ -2,9 +2,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 100%;
+  padding-top: 40px;
   position: relative;
-  height: 100vh;
 
   &:after {
     content: "";
@@ -40,18 +39,18 @@
     }
   }
 
-  &__inner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 5;
+  &__content {
     text-align: center;
   }
 
-  &__top {
-    max-height: 100px;
-    margin: 20px 50px 0;
+  &__inner {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
   }
 
   &__title {
@@ -71,12 +70,11 @@
     }
   }
 
-  &__title-md {
+  &__span {
     display: block;
     margin: 0 auto;
-    letter-spacing: 0.04em;
+    letter-spacing: 1.2;
     font-size: 26px;
-    font-weight: 400;
     white-space: nowrap;
     overflow: hidden;
     animation: animated-text 4s steps(29, end) 1s 1 normal both;
@@ -92,37 +90,35 @@
     }
   }
 
-  &__btn {
-    margin: 0 auto;
-    z-index: 4;
-    position: relative;
+  &__name {
+    margin-bottom: 40px;
+
+    &--first {
+      display: inline-block;
+      padding: 10px;
+      background-color: rgba(151, 35, 153, 0.5);
+    }
+
+    &--last {
+      position: relative;
+      display: inline-block;
+      padding: 10px 0 10px 10px;
+      border-top: 2px solid $white;
+      border-bottom: 2px solid $white;
+    }
   }
 
-  &__title-bg {
-    display: inline-block;
-    padding: 10px;
-    background-color: rgba(151, 35, 153, 0.5);
-  }
-
-  &__title-bg2 {
-    position: relative;
-    display: inline-block;
-    padding: 10px 0 10px 10px;
-    border-top: 2px solid $white;
-    border-bottom: 2px solid $white;
-  }
-
-  &__title-text {
+  &__box {
     max-width: 800px;
     text-align: center;
-    z-index: 3;
     position: relative;
-    margin: 0 auto 80px;
-    padding: 50px 70px 70px;
+    z-index: 3;
+    padding: 70px;
+    margin-bottom: 90px;
     text-transform: uppercase;
     cursor: pointer;
     overflow: hidden;
-    transition: all .5s;
+    transition: all 0.5s;
   }
 
   &__line {
@@ -215,97 +211,48 @@
     }
   }
 
-  .menu {
-    z-index: 3;
-
-    &__list {
-      display: inline-block;
-      margin-left: 50px;
-      position: relative;
-
-      &:first-child {
-        margin-left: 0;
-      }
-    }
-
-    &__link {
-      color: $title;
-      color: $white;
-      font-size: 20px;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      padding-bottom: 5px;
-      position: relative;
-
-      &:hover {
-        color: #A306C8;
-      }
-
-      &:after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -4px;
-        width: 100%;
-        height: 2px;
-        background-color: #A306C8;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform .4s ease-in-out;
-      }
-
-      &:hover:after {
-        transform: scaleX(1);
-        transform-origin: left;
-      }
-    }
-  }
-
-  // Стрелочки вниз анимация 
-  .arrow-down {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .arrow-down span {
-    display: block;
-    width: 15px;
-    height: 15px;
-    border-bottom: 5px solid $line;
-    border-right: 5px solid $line;
-    transform: rotate(45deg);
-    margin: -16px;
-    animation: arrow-down 2s infinite;
-  }
-
-  .arrow-down span:nth-child(2) {
-    animation-delay: -0.2s;
-  }
-
-  .arrow-down span:nth-child(3) {
-    animation-delay: -0.4s;
-  }
-
-  @keyframes arrow-down {
-    0% {
-      opacity: 0;
-      transform: rotate(45deg) translate(-20px, -20px);
-    }
-
-    50% {
-      opacity: 1;
-    }
-
-    100% {
-      opacity: 0;
-      transform: rotate(45deg) translate(20px, 20px);
-    }
-  }
-  
   &__title-form {
     margin-top: 50px;
   }
-}
 
+  // Стрелочки вниз анимация 
+
+  &__arrow {
+    margin-bottom: 100px;
+
+    & span {
+      display: block;
+      width: 15px;
+      height: 15px;
+      border-bottom: 5px solid $line;
+      border-right: 5px solid $line;
+      transform: rotate(45deg);
+      margin: -16px;
+      animation: arrow-down 2s infinite;
+    }
+
+    & span:nth-child(2) {
+      animation-delay: -0.2s;
+    }
+
+    & span:nth-child(3) {
+      animation-delay: -0.4s;
+    }
+
+    @keyframes arrow-down {
+      0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+      }
+    }
+  }
+}
