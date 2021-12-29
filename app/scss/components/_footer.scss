@@ -1,11 +1,9 @@
 .footer {
   background-image: radial-gradient(circle, rgba(193,115,212,1) 0%, rgba(60,5,92,1) 100%, rgba(0,31,255,1) 100%);
   position: relative;
-  padding: 100px 0 160px;
+  padding-bottom: 160px;
 
   &__title {
-    width: 300px;
-    height: 75px;
 
     &:before,
     &:after {
@@ -19,14 +17,14 @@
     }
 
     &:before {
-      background-image: url(../images/vector-footer2.svg);
+      background-image: url('../images/vector-footer2.svg');
       width: 140px;
       left: 0;
       top: -13px;
     }
 
     &:after {
-      background-image: url(../images/vector-footer1.svg);
+      background-image: url('../images/vector-footer1.svg');
       right: 0;
       width: 145px;
       height: 70px;
@@ -37,8 +35,9 @@
   &__img {
     position: relative;
     z-index: 4;
-    width: 150px;
+    max-width: 150px;
     height: 46px;
+    margin-bottom: 60px;
   }
 
   &__inner {
@@ -62,10 +61,6 @@
     }
   }
 
-  &__address {
-    margin-top: 60px;
-  }
-
   &__contact {
     display: block;
     z-index: 4;
@@ -87,6 +82,10 @@
     position: absolute;
     top: 1px;
     left: 0;
+  }
+
+  &__list {
+    text-align: left;
   }
 
   &__networks {

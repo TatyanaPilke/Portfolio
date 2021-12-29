@@ -1,9 +1,10 @@
 .header {
+  position: relative;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding-top: 40px;
-  position: relative;
+  z-index: 1;
 
   &:after {
     content: "";
@@ -13,7 +14,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 2;
+    z-index: -1;
   }
 
   &__wrapper {
@@ -40,17 +41,26 @@
   }
 
   &__content {
-    text-align: center;
-  }
-
-  &__inner {
-    position: relative;
-    z-index: 5;
+    font-family: 'Roboto Mono', monospace;
+    height: calc(100vh + 100px);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 100vh;
+  }
+
+  &__top {
+    position: fixed;
+    padding-top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    transition: padding 0.4s ease-in-out;
+
+    &--bg {
+      background-color: rgba(89, 15, 133, 0.9);
+      padding: 15px 0;
+    }
   }
 
   &__title {
@@ -218,7 +228,8 @@
   // Стрелочки вниз анимация 
 
   &__arrow {
-    margin-bottom: 100px;
+    position: absolute;
+    bottom: 50px;
 
     & span {
       display: block;

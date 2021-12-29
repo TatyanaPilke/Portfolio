@@ -1,6 +1,7 @@
 .menu {
-  width: 95%;
   z-index: 3;
+  display: flex;
+  justify-content: space-between;
 
   &__list {
     display: flex;
@@ -15,7 +16,6 @@
   }
 
   &__link {
-    color: $title;
     color: $white;
     font-size: 20px;
     font-weight: 500;

@@ -1,58 +1,56 @@
 .portfolio {
   background-image: linear-gradient(139.76deg, #ce8ff3 1.44%, rgba(235, 195, 241, 0) 69.47%);
-  padding: 100px 0 80px;
-  text-align: center;
   position: relative;
 
   &:after {
-      content: "";
-      width: 800px;
-      height: 800px;
-      position: absolute;
-      background-color: rgba(160, 4, 255, 0.1);
-      transform: rotate(45deg);
-      top: 40%;
-      left: -25%;
-    }
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: -25%;
+    width: 800px;
+    height: 800px;
+    background-color: rgba(160, 4, 255, 0.1);
+    transform: rotate(45deg);
+  }
 
   &:before {
     content: "";
-    background-image: url(../images/bg-about.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
+    background-image: url('../images/bg-about.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 530px;
     z-index: -1;
   }
 
   &__title {
-    width: 350px;
-    height: 75px;
+    margin-bottom: 100px;
+    padding-top: 0;
 
     &:before,
     &:after {
       content: " ";
       position: absolute;
       display: block;
+      height: 66px;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      height: 66px;
     }
 
     &:before {
-      background-image: url(../images/vector-portfolio1.svg);
+      background-image: url('../images/vector-portfolio1.svg');
       width: 175px;
       left: 0;
       top: -11px;
     }
 
     &:after {
-      background-image: url(../images/vector-portfolio2.svg);
+      background-image: url('../images/vector-portfolio2.svg');
       right: 0;
       width: 158px;
       top: -10px;
@@ -60,35 +58,36 @@
   }
 
   &__inner {
-    margin: 180px 0 100px;
-    z-index: 3;
+    z-index: 1;
     position: relative;
 
     &:after {
       content: "";
       background-color: #F3E1F5;
-      width: 1360px;
-      height: 1155px;
+      max-width: 1360px;
+      width: 100%;
+      height: 1190px;
       background-repeat: no-repeat;
       position: absolute;
-      top: -115px;
-      right: -390px;
+      top: -20px;
+      left: 400px;
       z-index: -2;
     }
   }
 
   &__box {
-    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 30px;
+    margin-bottom: 150px;
   }
 
   &__works {
-    max-width: 370px;
     height: 370px;
     object-fit: cover;
-    flex: 1 1 auto;
     position: relative;
     transition: all 0.5s ease;
-   
+
     &:hover .portfolio__hover {
       opacity: 1;
       transform: scale(1);
@@ -104,13 +103,16 @@
     }
 
     &--1 {
-      margin-right: 30px;
 
       &:before {
         background-color: #C23BD8;
         top: -20px;
         left: -20px;
       }
+    }
+
+    &--3 {
+      grid-column-end: 2;
     }
 
     &--5 {
@@ -122,6 +124,10 @@
         top: -136px;
         right: -136px;
       }
+    }
+
+    &--6 {
+      grid-column-end: 3;
     }
 
     &--7 {
@@ -136,10 +142,11 @@
 
     &--8 {
       position: relative;
+      grid-column-end: 3;
 
       &:after {
         content: "";
-        background-image: url(../images/circle.png);
+        background-image: url('../images/circle.png');
         background-repeat: no-repeat;
         background-position: right;
         width: 370px;
@@ -166,13 +173,6 @@
   }
 
   &__hover {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;  
-    max-width: 390px;
-    max-height: 390px;
-    background-color: rgba(72, 67, 67, 0.71);
     position: absolute;
     z-index: 4;
     top: 0;
@@ -180,6 +180,13 @@
     left: 0;
     bottom: 0;
     opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 390px;
+    max-height: 390px;
+    background-color: rgba(72, 67, 67, 0.71);
     transition: transform .25s ease;
     will-change: transform;
     transform: scale(0);

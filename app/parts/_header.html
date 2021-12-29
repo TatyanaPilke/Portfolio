@@ -2,81 +2,87 @@
 
 <header class="header lock-padding" style="background-image: url(images/bb.jpg)">
   <div class="header__wrapper">
-    <div class="header__inner">
-      <nav class="menu d-flex f-jcsb f-aic" id="header-menu">
-        <a class="logo" href="#">
-          <img class="logo__img" src="images/logo.svg" alt="Logo" width="180" height="62">
-        </a>
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link" href="#about">Обо мне</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#skills">Навыки</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#portfolio">Портфолио</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#reviews">Отзывы</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#contact">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__content">
-        <div class="header__box">
-          <h1 class="header__title">
-            <span class="header__name header__name--first">Татьяна </span>
-            <span class="header__name header__name--last">Пильке</span>
-            <span class="header__span">html - верстальщик</span>
-          </h1>
-          <span class="header__line header__line--top"></span>
-          <span class="header__line header__line--right"></span>
-          <span class="header__line header__line--bottom"></span>
-          <span class="header__line header__line--left"></span>
-        </div>
-        <a href="#popup" class="header__btn btn popup-link">Заказать верстку</a>
+    <div class="header__top">
+      <div class="container">
+        <nav class="menu d-flex f-jcsb f-aic" id="header-menu">
+          <a class="logo" href="#">
+            <img class="logo__img" src="images/logo.svg" alt="логотип" width="180" height="62">
+          </a>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#about">Обо мне</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#skills">Навыки</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#portfolio">Портфолио</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#reviews">Отзывы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#contact">Контакты</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <a class="header__arrow">
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
     </div>
-    <span class="decor-line decor-line--line1"></span>
-    <span class="decor-line decor-line--line2"></span>
-    <span class="decor-line decor-line--line3"></span>
-    <span class="decor-line decor-line--line4"></span>
-    <span class="decor-line decor-line--line5"></span>
-    <span class="decor-line decor-line--line6"></span>
-    <span class="decor-line decor-line--line7"></span>
-    <span class="decor-line decor-line--line8"></span>
+    <div class="header__content">
+      <div class="header__box">
+        <h1 class="header__title">
+          <span class="header__name header__name--first">Татьяна </span>
+          <span class="header__name header__name--last">Пильке</span>
+          <span class="header__span">html - верстальщик</span>
+        </h1>
+        <span class="header__line header__line--top"></span>
+        <span class="header__line header__line--right"></span>
+        <span class="header__line header__line--bottom"></span>
+        <span class="header__line header__line--left"></span>
+      </div>
+      <a class="header__btn btn popup-link" href="#popup">Заказать верстку</a>
+      <div class="header__arrow">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+   
+  </div>
+  <span class="decor-line decor-line--line1"></span>
+  <span class="decor-line decor-line--line2"></span>
+  <span class="decor-line decor-line--line3"></span>
+  <span class="decor-line decor-line--line4"></span>
+  <span class="decor-line decor-line--line5"></span>
+  <span class="decor-line decor-line--line6"></span>
+  <span class="decor-line decor-line--line7"></span>
+  <span class="decor-line decor-line--line8"></span>
 
-    <div id="popup" class="popup">
-      <div class="popup__body">
-        <div class="popup__content">
-          <a href="#header" class="popup__close close-popup">X</a>
-          <form class="footer-form header__form" action="#" method="post" id="order">
-            <div class="footer-form__title header__title-form">
-              Напишите мне
-            </div>
-            <label class="footer-form__label">
-              <input class="footer-form__input" type="text" placeholder="Ваше имя *" required>
-            </label>
-            <label class="footer-form__label">
-              <input class="footer-form__input" type="email" placeholder="Email *" required>
-            </label>
-            <label class="footer-form__label">
-              <input class="footer-form__input" type="tel" placeholder="Телефон *" required>
-            </label>
-            <textarea class="footer-form__input footer-form__textarea" placeholder="Сообщение *" required></textarea>
-            <button class="footer-form__btn btn" name="submit" type="submit">Отправить</button>
-          </form>
-        </div>
+  <div id="popup" class="popup">
+    <div class="popup__body">
+      <div class="popup__content">
+        <a href="#header" class="popup__close close-popup">X</a>
+        <form class="footer-form header__form" action="#" method="post" id="order">
+          <div class="footer-form__title header__title-form">
+            Напишите мне
+          </div>
+          <label class="footer-form__label" for="name" aria-label="ваше имя"></label>
+          <input class="footer-form__input" id="name" type="text" name="form[fullname]" placeholder="Ваше имя *"
+            required>
+
+          <label class="footer-form__label" for="email" aria-label="ваш email"></label>
+          <input class="footer-form__input" id="email" type="email" name="form[email]" placeholder="Email *" required>
+
+          <label class="footer-form__label" for="phone" aria-label="ваш телефон"></label>
+          <input class="footer-form__input" id="phone" type="tel" name="form[tel]" placeholder="Телефон *" required>
+          <label class="footer-form__label" for="message" aria-label="ваше сообщение"></label>
+          <textarea class="footer-form__input footer-form__textarea" id="message" name="form[message]"
+            placeholder="Сообщение *" required></textarea>
+          <button class="footer-form__btn btn" name="submit" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
+  </div>
 </header>
 
 

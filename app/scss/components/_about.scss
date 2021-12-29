@@ -1,6 +1,4 @@
 .about {
-  padding: 100px 0;
-  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -13,22 +11,15 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    background-image: url(../images/photo-bg.png);
+    background-image: url('../images/photo-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 70%;
     height: 140px;
   }
-
-  &__inner {
-    padding-top: 55px;
-  }
-
+  
   &__title {
     color: #60226A;
-    margin: 0 auto;
-    max-width: 310px;
-    height: 60px;
 
     &:before,
     &:after {
@@ -41,7 +32,7 @@
     }
 
     &:before {
-      background-image: url(../images/vector-about1.svg);
+      background-image: url('../images/vector-about1.svg');
       width: 108px;
       height: 62px;
       left: 0;
@@ -49,7 +40,7 @@
     }
 
     &:after {
-      background-image: url(../images/vector-about2.svg);
+      background-image: url('../images/vector-about2.svg');
       right: 0;
       width: 190px;
       height: 30px;
@@ -58,20 +49,13 @@
   }
 
   &__content {
-    margin-top: 30px;
-    margin-left: 10%;
-    margin-right: 10%;
+    text-align: left;
     position: relative;
 
     @include r($desktop) {
       display: flex;
       flex-direction: column-reverse;
     }
-  }
-
-  &__img {
-    max-width: 617px;
-    min-height: 596px;
   }
 
   &__text {
@@ -133,7 +117,7 @@
     transform: rotate(45deg);
 
     &--right {
-      right: 10%;
+      right: 15%;
     }
 
     &--left {

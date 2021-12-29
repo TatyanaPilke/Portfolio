@@ -1,21 +1,33 @@
 // start back to top 
-const btn = $('.back-top');
+// const btn = $('.back-top');
 
-$(window).scroll(function () {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
+// $(window).scroll(function () {
+//   if ($(window).scrollTop() > 300) {
+//     btn.addClass('show');
+//   } else {
+//     btn.removeClass('show');
+//   }
+// });
 
-btn.on('click', function (e) {
-  e.preventDefault();
-  $('html, body').animate({
-    scrollTop: 0
-  }, '300');
-});
+// btn.on('click', function (e) {
+//   e.preventDefault();
+//   $('html, body').animate({
+//     scrollTop: 0
+//   }, '300');
+// });
 // end back to top
+
+// header fixed scroll 
+
+$window = $(window);
+$window.scroll(function(){
+		$scrollPosition = $window.scrollTop();
+		if ($scrollPosition > 50) {
+				$('.header__top').addClass('header__top--bg');
+		} else {
+				$('.header__top').removeClass('header__top--bg');
+		}
+})
 
 //  start SWIPER skills
 var swiper = new Swiper('.skills__container', {
