@@ -82,7 +82,7 @@ body.lock {
 } 
 
 .wrapper {
-	overflow-x: hidden;
+	overflow-y: hidden;
 	min-height: 100%;
 }
 
@@ -163,7 +163,7 @@ body.lock {
   font-size: 15px;
   font-weight: 500;
   color: $white;
-  padding: 19px 40px;
+  padding: 19px 30px;
   letter-spacing: 1px;
   background: linear-gradient(90deg, #AB07C6 0%, #4340D1 106.31%);
   border-radius: 3px;

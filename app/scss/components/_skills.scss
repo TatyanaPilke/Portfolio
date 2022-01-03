@@ -1,8 +1,8 @@
 .skills {
+  position: relative;
+  z-index: 0;
   background-image: radial-gradient(circle, rgba(193,115,212,1) 0%, rgba(60,5,92,1) 100%, rgba(0,31,255,1) 100%);
   width: 100%;
-  z-index: 2;
-  position: relative;
   padding-bottom: 70px;
 
   &__line {
@@ -38,7 +38,6 @@
       position: absolute;
       display: block;
       top: 50px;
-      z-index: -1;
       background-color: rgba(38, 34, 34, 0.8);
       width: 100%;
       height: 220px;
@@ -47,7 +46,6 @@
 
   &__triangle {
     position: relative;
-    z-index: 3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,7 +64,6 @@
       right: 0;
       width: 0;
       height: 0;
-      z-index: 1;
       border-style: solid;
       border-width: 0 170px 300px 170px;
       border-color: transparent transparent $bg-skills transparent;
@@ -74,7 +71,6 @@
 
     &--turn {
       transform: rotate(180deg);
-      z-index: 2;
     }
   }
 
@@ -85,18 +81,16 @@
   &__icon {
     display: block;
     position: absolute;
-    z-index: 3;
+    z-index: 1;
     top: 150px;
     left: -50px;
     width: 100px;
     height: 102px;
     background-repeat: no-repeat;
-    background-size: 142px 106px;
-    background-size: cover;
+    background-size: contain;
 
     &--turn {
       transform: rotate(180deg);
-      z-index: 3;
     }
 
     &--width {
@@ -141,7 +135,7 @@
     }
 
     &:before {
-      background-image: url('../images/vector-skills1.svg');
+      background-image: url('../images/vector/vector-skills1.svg');
       width: 185px;
       height: 75px;
       left: 0;
@@ -149,7 +143,7 @@
     }
 
     &:after {
-      background-image: url('../images/vector-skills2.svg');
+      background-image: url('../images/vector/vector-skills2.svg');
       right: 0;
       width: 148px;
       height: 70px;

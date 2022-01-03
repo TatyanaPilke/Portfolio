@@ -17,14 +17,14 @@
     }
 
     &:before {
-      background-image: url('../images/vector-footer2.svg');
+      background-image: url('../images/vector/vector-footer2.svg');
       width: 140px;
       left: 0;
       top: -13px;
     }
 
     &:after {
-      background-image: url('../images/vector-footer1.svg');
+      background-image: url('../images/vector/vector-footer1.svg');
       right: 0;
       width: 145px;
       height: 70px;
@@ -159,9 +159,9 @@
 
     &--fb {
 
-      &:before {
-        content: "\f09a";
-      }
+      // &:before {
+
+      // }
 
       &:hover {
         background-color: #3b5998;
@@ -171,7 +171,6 @@
     &--git {
 
       &:before {
-        content: "\f09b";
         font-size: 20px;
       }
 
@@ -183,7 +182,6 @@
     &--in {
 
       &:before {
-        content: "\f0e1";
         font-size: 15px;
       }
 
@@ -328,33 +326,38 @@
 
 .back-top {
   display: block;
-  background-color: rgba(134, 133, 133, 0.3);
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  border-radius: 2px;
   position: fixed;
   bottom: 40px;
   right: 40px;
-  transition: background-color .3s,
-    opacity .5s, visibility .5s;
-  // visibility: hidden;
-  z-index: 1000;
+  z-index: 50;
+  background-color: rgba(134, 133, 133, 0.3);
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  transition: background-color 0.3s;
+  visibility: hidden;
+
+  &:after,
+  &:before {
+    content: '';
+    position: absolute;
+    top: 45%;
+    background-color: rgba(31, 28, 28, 0.67);
+    width: 10px;
+    height: 2px;
+  }
+
+  &:after {
+    transform: rotate(45deg);
+    right: 12px;
+  }
 
   &:before {
-    content: "\f077";
-    position: absolute;
-    display: block;
-    font-family: 'icomoon';
-    font-size: 12px;
-    color: $line;
-    z-index: 100;
-    top: 50%;
-    @include transform;
+    transform: rotate(-45deg);
+    left: 12px;
   }
 
   &:hover {
-    cursor: pointer;
     background-color: #d497fc;
   }
 
@@ -362,7 +365,7 @@
     background-color: #b062e4;
   }
 
-  & .show {
+  &.show {
     opacity: 1;
     visibility: visible;
   }
