@@ -50,9 +50,11 @@ cite {
 }
 
 button {
+  appearance: none;
   border: transparent;
   background-color: transparent;
   padding: 0;
+  font: inherit;
   cursor: pointer;
 }
 
@@ -165,6 +167,6 @@ body.lock {
   color: $white;
   padding: 19px 30px;
   letter-spacing: 1px;
-  background: linear-gradient(90deg, #AB07C6 0%, #4340D1 106.31%);
+  background: linear-gradient(90deg, #ab07c6 0%, #4340D1 106.31%);
   border-radius: 3px;
 }

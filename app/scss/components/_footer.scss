@@ -1,5 +1,5 @@
 .footer {
-  background-image: radial-gradient(circle, rgba(193,115,212,1) 0%, rgba(60,5,92,1) 100%, rgba(0,31,255,1) 100%);
+  background-image: radial-gradient(circle, rgba(193, 115, 212, 1) 0%, rgba(60, 5, 92, 1) 100%, rgba(0, 31, 255, 1) 100%);
   position: relative;
   padding-bottom: 160px;
 
@@ -61,26 +61,41 @@
     }
   }
 
+  &__item {
+    margin-bottom: 50px;
+  }
+
   &__contact {
-    display: block;
     z-index: 4;
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: 50px;
     position: relative;
     color: $white;
+    border-radius: 3px;
     font-style: normal;
-    padding-left: 40px;
+    padding: 5px 5px 5px 40px;
     @include transition;
 
-    &--hover:hover {
+    svg path {
+      transition: fill 0.5s;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2px rgba(205, 48, 240, 0.2);
+    }
+
+    &:hover {
       color: #DA8EE7;
+
+      svg path {
+        fill: #DA8EE7;
+      }
     }
   }
 
   &__icon {
     position: absolute;
-    top: 1px;
+    top: 6px;
     left: 0;
   }
 
@@ -105,7 +120,9 @@
   }
 
   &__net-icon {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
     padding: 0;
@@ -115,7 +132,14 @@
     @include transition;
     background-color: rgba(32, 27, 32, 0.7);
 
+    svg {
+      fill: $white;
+      width: 20px;
+      height: 20px;
+    }
+
     &:hover {
+      background-color: #3b5998;
       box-shadow: 0 0 7px 2px #a5a5a7;
       animation: bounce 1s;
     }
@@ -155,39 +179,6 @@
       font-family: 'icomoon' !important;
       font-size: 16px;
       color: $white;
-    }
-
-    &--fb {
-
-      // &:before {
-
-      // }
-
-      &:hover {
-        background-color: #3b5998;
-      }
-    }
-
-    &--git {
-
-      &:before {
-        font-size: 20px;
-      }
-
-      &:hover {
-        background-color: #2a5a8a;
-      }
-    }
-
-    &--in {
-
-      &:before {
-        font-size: 15px;
-      }
-
-      &:hover {
-        background-color: #4183c4;
-      }
     }
   }
 
