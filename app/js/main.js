@@ -191,3 +191,17 @@ document.addEventListener('keydown', function (e) {
 
 
 // end popup 
+
+// start button effect
+
+const button = document.getElementById('btn');
+
+button.addEventListener("mousemove", (e)=> {
+  
+  const posX = e.pageX - e.target.offsetLeft;
+  const posY = e.pageY - e.target.offsetTop;
+  
+  e.target.style.setProperty("--x", `${posX}px`);
+  e.target.style.setProperty("--y", `${posY}px`);
+  
+});

@@ -79,9 +79,9 @@ body {
   min-width: 320px;
 }
 
-body.lock {
-	overflow: hidden;
-} 
+// body.lock {
+// 	overflow: hidden;
+// } 
 
 .wrapper {
 	overflow-y: hidden;
@@ -167,6 +167,29 @@ body.lock {
   color: $white;
   padding: 19px 30px;
   letter-spacing: 1px;
+  // background-color: #4340D1;
   background: linear-gradient(90deg, #ab07c6 0%, #4340D1 106.31%);
   border-radius: 3px;
+  position: relative;
+  overflow:hidden;
+  z-index: 1;
+
+  &:before{
+    content: '';
+    position:absolute;
+    left: var(--x);
+    top: var(--y);
+    width: 0px;
+    height: 0px;
+    background: radial-gradient(circle closest-side, #df61f3, #FF000000);
+    border-radius: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s linear, height 0.3s linear
+  }
+  
+  &:hover:before{
+    width: 100px;
+    height: 100px;
+  }
 }

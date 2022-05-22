@@ -17,29 +17,6 @@
     z-index: -1;
   }
 
-  &__wrapper {
-
-    &:after,
-    &:before {
-      content: " ";
-      width: 700px;
-      height: 700px;
-      top: 170px;
-      right: -400px;
-      border-radius: 5px;
-      background-color: $line;
-      opacity: 0.12;
-      display: block;
-      position: absolute;
-      z-index: 2;
-      transform: rotate(45deg);
-    }
-
-    &:before {
-      left: -400px;
-    }
-  }
-
   &__content {
     font-family: 'Roboto Mono', monospace;
     height: calc(100vh + 100px);
